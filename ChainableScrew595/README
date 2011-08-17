@@ -1,0 +1,41 @@
+======================================================================
+= ChainableScrew595                                                  =
+= URL: https://github.com/hmbusch/PCB-Designs/ChainableScrew595      =
+======================================================================
+
+ChainableScrew595
+=================
+
+This design features a small PCB with an 74HC595 shift register
+at it's heart. Multiple modules of these can be connected together
+to form a shift register cascade. The register connects to an
+ULN2803A Darlington Array sink driver whose outputs are available
+as a 9 port screw header (8 ports + VCC connector).
+As should be obvious from the design, this module can only be used
+for sink switching, as it requires fewer and more common parts than
+a similar design ifor source switching.
+
+The design was inspired by Sparkfun's Shift Register Breakout [1]
+and expanded with the Darlington Array IC so that the module can
+switch even higher loads (the ULN2803 can source 500mA per port)
+directly. But don't forget current limiting resistors when switching
+LEDs and other parts sensible to overcurrent.
+
+For the time being, the design is untested, so use it at your own
+risk only.
+
+Gerber files
+------------
+
+This projects comes with a set of prepared gerber files for 
+production. These files were generated using the Seeedstudio
+Fusion PCB CAM for Eagle [2].
+If you need other formats of need to make changes, feel free
+to generate your own gerber files from the Eagle files.
+
+
+Links
+=====
+[1] http://www.sparkfun.com/products/10680
+[2] http://www.seeedstudio.com/depot/fusion-pcb-service-p-835.html?cPath=185
+

@@ -1,0 +1,24 @@
+======================================================================
+= PCB-Designs                                                        =
+= URL: https://github.com/hmbusch/PCB-Designs                        =
+======================================================================
+
+From time to time I sit down and design some circuitry that can be
+used for multiple purposes, a component if you will. The designs for
+these PCBs are stored in this project (or at least those I feel 
+confident to share).
+
+Contents
+========
+
+ChainableScrew595
+-----------------
+
+This design features a small PCB with an 74HC595 shift register
+at it's heart. Multiple modules of these can be connected together
+to form a shift register cascade. The register connects to an
+ULN2803A Darlington Array sink driver whose outputs are available
+as a 9 port screw header (8 ports + VCC connector).
+As should be obvious from the design, this module can only be used
+for sink switching, as it requires fewer and more common parts than
+a similar design for source switching.
