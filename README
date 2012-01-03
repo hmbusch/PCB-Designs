@@ -22,3 +22,11 @@ as a 9 port screw header (8 ports + VCC connector).
 As should be obvious from the design, this module can only be used
 for sink switching, as it requires fewer and more common parts than
 a similar design for source switching.
+
+EAGLE-Libraries
+---------------
+
+Contains libraries for use with Cadsoft Eagle. These libraries 
+contain parts and packages I added myself for components that 
+are not contained in the stock libraries.
+
