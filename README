@@ -30,3 +30,13 @@ Contains libraries for use with Cadsoft Eagle. These libraries
 contain parts and packages I added myself for components that 
 are not contained in the stock libraries.
 
+Pixel
+-----
+
+The Pixel is a small board that puts three 5mm LEDs in series with a
+SMD resistor to create a larger light source than a single LED. The Pixel 
+is supposed to be powered by 12 Volts and outfitted with three high 
+brightness LEDs. The pixel is a good alternative to power LEDs in
+terms of price, power consumption and temperature management.
+
+
