@@ -44,7 +44,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="17" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="17" fill="1" visible="no" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -372,6 +372,62 @@ This package is used for older Kingbright seven-segment display with two digits.
 <text x="8.4" y="4" size="1.27" layer="21" font="vector">9</text>
 <text x="8.4" y="-4.7" size="1.27" layer="21" font="vector">8</text>
 </package>
+<package name="HOPE-RF-14">
+<description>&lt;strong&gt;SMD package for HopeRF FSK 14-pin/pad transmitter/receiver modules&lt;/strong&gt;
+&lt;br/&gt;&lt;br/&gt;
+This is a SMD footprint for the FSK transmitter/receiver modules manufactured by HopeRF Electronics &lt;a href="http://www.hoperf.com/"&gt;(www.hoperf.com)&lt;/a&gt;.
+&lt;br/&gt;&lt;br/&gt;
+It will fit the 14-pin/pad dedicated transmitter and receiver modules &lt;a href="http://www.hoperf.com/rf_fsk/fsk/18.htm"&gt;RFM01&lt;/a&gt; and &lt;a href="http://www.hoperf.com/rf_fsk/fsk/19.htm"&gt;RFM02&lt;/a&gt;. It is not suitable for the combined transceiver modules as they require 16-pins/pads.
+&lt;br/&gt;&lt;br/&gt;
+The pads names are made up from the combined pin function of both the RFM01 and 02, separated with a forward slash (&lt;code&gt;/&lt;/code&gt;). A hyphen denotes separates multiple function of a pin of a single module.
+&lt;br/&gt;&lt;br/&gt;
+Example: the pad named &lt;code&gt;DATA-NFFS/CLK&lt;/code&gt; is the DATA/nFFS pin on the RMF01 and the CLK pin on the RFM02</description>
+<smd name="NSEL/NIRQ" x="-5.9" y="7.5" dx="1.5" dy="2" layer="1"/>
+<smd name="SCK/FSK" x="-3.9" y="7.5" dx="1.5" dy="2" layer="1"/>
+<smd name="SDI/GND_1" x="-1.9" y="7.5" dx="1.5" dy="2" layer="1"/>
+<smd name="VDI/VCC" x="0.1" y="7.5" dx="1.5" dy="2" layer="1"/>
+<smd name="GND_1/GND_2" x="2.1" y="7.5" dx="1.5" dy="2" layer="1"/>
+<smd name="ANT" x="6.1" y="7.5" dx="1.5" dy="2" layer="1"/>
+<smd name="VDD/GND_3" x="4.1" y="7.5" dx="1.5" dy="2" layer="1"/>
+<wire x1="-8" y1="7.5" x2="-8" y2="-8.4" width="0.127" layer="51"/>
+<wire x1="-8" y1="-8.4" x2="8.1" y2="-8.4" width="0.127" layer="51"/>
+<wire x1="8.1" y1="7.5" x2="8.1" y2="-8.4" width="0.127" layer="51"/>
+<smd name="FFIT-SDO/SDI" x="-5.9" y="-8.4" dx="1.5" dy="2" layer="1"/>
+<smd name="NIRQ/SCK" x="-3.9" y="-8.4" dx="1.5" dy="2" layer="1"/>
+<smd name="DATA-NFFS/NSEL" x="-1.9" y="-8.4" dx="1.5" dy="2" layer="1"/>
+<smd name="DCLK-CFIL-FFIT/CLK" x="0.1" y="-8.4" dx="1.5" dy="2" layer="1"/>
+<smd name="CLK/GND_4" x="2.1" y="-8.4" dx="1.5" dy="2" layer="1"/>
+<smd name="NRES/GND_5" x="4.1" y="-8.4" dx="1.5" dy="2" layer="1"/>
+<smd name="GND_2/GND_6" x="6.1" y="-8.4" dx="1.5" dy="2" layer="1"/>
+<wire x1="4" y1="-1.5" x2="4" y2="-6" width="0.127" layer="51" curve="-150" cap="flat"/>
+<wire x1="-4.5" y1="-6" x2="-4.5" y2="-1.5" width="0.127" layer="51" curve="-150" cap="flat"/>
+<wire x1="-4.5" y1="-1.5" x2="4" y2="-1.5" width="0.127" layer="51"/>
+<wire x1="-4.5" y1="-6" x2="4" y2="-6" width="0.127" layer="51"/>
+<circle x="-2" y="2.5" radius="2.5" width="0.127" layer="51"/>
+<wire x1="4" y1="-2" x2="4" y2="-5.5" width="0.127" layer="51" curve="-150" cap="flat"/>
+<wire x1="-4.5" y1="-5.5" x2="-4.5" y2="-2" width="0.127" layer="51" curve="-150" cap="flat"/>
+<wire x1="-4.5" y1="-2" x2="4" y2="-2" width="0.127" layer="51"/>
+<wire x1="-4.5" y1="-5.5" x2="4" y2="-5.5" width="0.127" layer="51"/>
+<text x="-4.75" y="-4.25" size="1.27" layer="51">10.000MHz</text>
+<wire x1="-8" y1="7.5" x2="-8" y2="-8.4" width="0.254" layer="21"/>
+<wire x1="8.1" y1="7.5" x2="8.1" y2="-8.4" width="0.254" layer="21"/>
+<circle x="-2" y="2.5" radius="2.5" width="0.254" layer="21"/>
+<wire x1="-8" y1="7.5" x2="8.1" y2="7.5" width="0.127" layer="51"/>
+<wire x1="-8" y1="7.5" x2="-7" y2="7.5" width="0.254" layer="21"/>
+<wire x1="7.2" y1="7.5" x2="8.1" y2="7.5" width="0.254" layer="21"/>
+<wire x1="-8" y1="-8.5" x2="-7" y2="-8.5" width="0.254" layer="21"/>
+<wire x1="7.2" y1="-8.5" x2="8.1" y2="-8.5" width="0.254" layer="21"/>
+<wire x1="4" y1="-1.5" x2="4" y2="-6" width="0.254" layer="21" curve="-150" cap="flat"/>
+<wire x1="-4.5" y1="-6" x2="-4.5" y2="-1.5" width="0.254" layer="21" curve="-150" cap="flat"/>
+<wire x1="-4.5" y1="-1.5" x2="4" y2="-1.5" width="0.254" layer="21"/>
+<wire x1="-4.5" y1="-6" x2="4" y2="-6" width="0.254" layer="21"/>
+<wire x1="3.75" y1="-2" x2="3.75" y2="-5.5" width="0.254" layer="21" curve="-150" cap="flat"/>
+<wire x1="-4.25" y1="-5.5" x2="-4.25" y2="-2" width="0.254" layer="21" curve="-150" cap="flat"/>
+<wire x1="-4.25" y1="-2" x2="3.75" y2="-2" width="0.254" layer="21"/>
+<wire x1="-4.25" y1="-5.5" x2="3.75" y2="-5.5" width="0.254" layer="21"/>
+<text x="-4.75" y="-4.25" size="1.27" layer="21">10.000MHz</text>
+<text x="-3" y="2" size="1.27" layer="21">IC</text>
+</package>
 </packages>
 <symbols>
 <symbol name="MRBS2">
@@ -540,6 +596,54 @@ This symbol is simplyfied and does not reproduce the inner workings of the relai
 <pin name="DIG_1" x="-17.78" y="-10.16" length="middle"/>
 <pin name="DIG_2" x="20.32" y="-10.16" length="middle" rot="R180"/>
 </symbol>
+<symbol name="RFM01">
+<description>&lt;strong&gt;HopeRF RFM01 Universal ISM Band FSK Receiver&lt;/strong&gt;
+&lt;br/&gt;&lt;br/&gt;
+This is the symbol for the &lt;a href="http://www.hoperf.com/rf_fsk/fsk/18.htm"&gt;RFM01&lt;/a&gt; ISM band receiver as SMD version (14 pin) as opposed to the throughole (16 pin).</description>
+<wire x1="-12.7" y1="20.32" x2="12.7" y2="20.32" width="0.254" layer="94"/>
+<wire x1="12.7" y1="20.32" x2="12.7" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-20.32" x2="-12.7" y2="-20.32" width="0.254" layer="94"/>
+<pin name="ANT" x="-2.54" y="25.4" length="middle" rot="R270"/>
+<pin name="VDD" x="-17.78" y="17.78" length="middle" direction="pwr"/>
+<pin name="GND_2" x="-17.78" y="-17.78" length="middle" direction="pwr" swaplevel="5"/>
+<pin name="GND_1" x="-17.78" y="-15.24" length="middle" direction="pwr" swaplevel="5"/>
+<wire x1="-12.7" y1="-20.32" x2="-12.7" y2="20.32" width="0.254" layer="94"/>
+<pin name="SDI" x="-17.78" y="12.7" length="middle" direction="in"/>
+<pin name="SCK" x="-17.78" y="7.62" length="middle" direction="in" function="clk"/>
+<pin name="CLK_OUT" x="17.78" y="-17.78" length="middle" direction="out" function="clk" rot="R180"/>
+<pin name="VDI" x="-17.78" y="2.54" length="middle" direction="out"/>
+<pin name="NSEL" x="17.78" y="15.24" length="middle" direction="in" rot="R180"/>
+<pin name="FFIT/SDO" x="17.78" y="10.16" length="middle" direction="out" rot="R180"/>
+<pin name="NRES" x="-17.78" y="-7.62" length="middle" direction="out"/>
+<pin name="NIRQ" x="17.78" y="5.08" length="middle" direction="out" rot="R180"/>
+<pin name="DATA/NFFS" x="17.78" y="0" length="middle" rot="R180"/>
+<pin name="DCLK/CFIL/FFIT" x="17.78" y="-5.08" length="middle" rot="R180"/>
+<text x="11.938" y="-21.59" size="1.9304" layer="94" rot="R180">RFM01</text>
+</symbol>
+<symbol name="RFM02">
+<description>&lt;strong&gt;HopeRF RFM02 Universal ISM Band FSK Transmitter&lt;/strong&gt;
+&lt;br/&gt;&lt;br/&gt;
+This is the symbol for the &lt;a href="http://www.hoperf.com/rf_fsk/fsk/19.htm"&gt;RFM02&lt;/a&gt; ISM band transmitter as SMD version (14 pin) as opposed to the throughole (16 pin).</description>
+<wire x1="-12.7" y1="20.32" x2="12.7" y2="20.32" width="0.254" layer="94"/>
+<wire x1="12.7" y1="20.32" x2="12.7" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-20.32" x2="-12.7" y2="-20.32" width="0.254" layer="94"/>
+<pin name="ANT" x="-2.54" y="25.4" length="middle" rot="R270"/>
+<pin name="VDD" x="-17.78" y="17.78" length="middle" direction="pwr"/>
+<pin name="GND_2" x="-17.78" y="-7.62" length="middle" direction="pwr" swaplevel="5"/>
+<pin name="GND_1" x="-17.78" y="-5.08" length="middle" direction="pwr" swaplevel="5"/>
+<wire x1="-12.7" y1="-20.32" x2="-12.7" y2="20.32" width="0.254" layer="94"/>
+<pin name="SDI" x="-17.78" y="12.7" length="middle" direction="in"/>
+<pin name="SCK" x="-17.78" y="7.62" length="middle" direction="in" function="clk"/>
+<pin name="GND_3" x="-17.78" y="-10.16" length="middle" direction="pwr" swaplevel="5"/>
+<pin name="GND_4" x="-17.78" y="-12.7" length="middle" direction="pwr" swaplevel="5"/>
+<pin name="GND_5" x="-17.78" y="-15.24" length="middle" direction="pwr" swaplevel="5"/>
+<pin name="NSEL" x="17.78" y="15.24" length="middle" direction="in" rot="R180"/>
+<pin name="CLK_OUT" x="17.78" y="-17.78" length="middle" direction="out" function="clk" rot="R180"/>
+<pin name="NIRQ" x="17.78" y="5.08" length="middle" direction="out" rot="R180"/>
+<pin name="FSK" x="17.78" y="0" length="middle" direction="in" rot="R180"/>
+<pin name="GND_6" x="-17.78" y="-17.78" length="middle" direction="pwr" swaplevel="5"/>
+<text x="11.684" y="-21.59" size="1.9304" layer="94" rot="R180">RFM02</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="MRBS-20003">
@@ -705,6 +809,68 @@ off-hook conditions without loading the line or causing distortion of the line b
 <connect gate="G$1" pin="SEG_F_2" pad="11"/>
 <connect gate="G$1" pin="SEG_G_1" pad="16"/>
 <connect gate="G$1" pin="SEG_G_2" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="HOPE-REC">
+<description>&lt;strong&gt;HopeRF RFM01 Universal ISM Band FSK Receiver&lt;/strong&gt;
+&lt;br/&gt;&lt;br/&gt;
+This is the device for the &lt;a href="http://www.hoperf.com/rf_fsk/fsk/18.htm"&gt;RFM01&lt;/a&gt; ISM band receiver as SMD version (14 pin) as opposed to the throughole (16 pin).</description>
+<gates>
+<gate name="G$1" symbol="RFM01" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-RFM01-SMD" package="HOPE-RF-14">
+<connects>
+<connect gate="G$1" pin="ANT" pad="ANT"/>
+<connect gate="G$1" pin="CLK_OUT" pad="CLK/GND_4"/>
+<connect gate="G$1" pin="DATA/NFFS" pad="DATA-NFFS/NSEL"/>
+<connect gate="G$1" pin="DCLK/CFIL/FFIT" pad="DCLK-CFIL-FFIT/CLK"/>
+<connect gate="G$1" pin="FFIT/SDO" pad="FFIT-SDO/SDI"/>
+<connect gate="G$1" pin="GND_1" pad="GND_1/GND_2"/>
+<connect gate="G$1" pin="GND_2" pad="GND_2/GND_6"/>
+<connect gate="G$1" pin="NIRQ" pad="NIRQ/SCK"/>
+<connect gate="G$1" pin="NRES" pad="NRES/GND_5"/>
+<connect gate="G$1" pin="NSEL" pad="NSEL/NIRQ"/>
+<connect gate="G$1" pin="SCK" pad="SCK/FSK"/>
+<connect gate="G$1" pin="SDI" pad="SDI/GND_1"/>
+<connect gate="G$1" pin="VDD" pad="VDD/GND_3"/>
+<connect gate="G$1" pin="VDI" pad="VDI/VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="HOPE-TRANS">
+<description>&lt;strong&gt;HopeRF RFM02 Universal ISM Band FSK Transmitter&lt;/strong&gt;
+&lt;br/&gt;&lt;br/&gt;
+This is the device for the &lt;a href="http://www.hoperf.com/rf_fsk/fsk/19.htm"&gt;RFM01&lt;/a&gt; ISM band transmitter as SMD version (14 pin) as opposed to the throughole (16 pin).</description>
+<gates>
+<gate name="G$1" symbol="RFM02" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-RFM02-SMD" package="HOPE-RF-14">
+<connects>
+<connect gate="G$1" pin="ANT" pad="ANT"/>
+<connect gate="G$1" pin="CLK_OUT" pad="DCLK-CFIL-FFIT/CLK"/>
+<connect gate="G$1" pin="FSK" pad="SCK/FSK"/>
+<connect gate="G$1" pin="GND_1" pad="SDI/GND_1"/>
+<connect gate="G$1" pin="GND_2" pad="GND_1/GND_2"/>
+<connect gate="G$1" pin="GND_3" pad="VDD/GND_3"/>
+<connect gate="G$1" pin="GND_4" pad="CLK/GND_4"/>
+<connect gate="G$1" pin="GND_5" pad="NRES/GND_5"/>
+<connect gate="G$1" pin="GND_6" pad="GND_2/GND_6"/>
+<connect gate="G$1" pin="NIRQ" pad="NSEL/NIRQ"/>
+<connect gate="G$1" pin="NSEL" pad="DATA-NFFS/NSEL"/>
+<connect gate="G$1" pin="SCK" pad="NIRQ/SCK"/>
+<connect gate="G$1" pin="SDI" pad="FFIT-SDO/SDI"/>
+<connect gate="G$1" pin="VDD" pad="VDI/VCC"/>
 </connects>
 <technologies>
 <technology name=""/>
