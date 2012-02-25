@@ -14,7 +14,7 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="16" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="17" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
@@ -44,7 +44,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="17" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="18" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -194,6 +194,7 @@ Horizontal mount / vertical adjust package</description>
 <text x="2.1" y="-3.4" size="1.27" layer="51" font="vector">E</text>
 <text x="-0.4" y="2.4" size="1.27" layer="51" font="vector">S</text>
 <text x="-6.35" y="-5.08" size="1.27" layer="25" font="vector" rot="R90">&gt;NAME</text>
+<circle x="0" y="0" radius="2" width="0.2032" layer="45"/>
 </package>
 <package name="SOT23">
 <description>&lt;strong&gt;SOT-23&lt;/strong&gt;
@@ -371,6 +372,7 @@ This package is used for older Kingbright seven-segment display with two digits.
 <text x="-9.9" y="4.2" size="1.27" layer="21" font="vector">16</text>
 <text x="8.4" y="4" size="1.27" layer="21" font="vector">9</text>
 <text x="8.4" y="-4.7" size="1.27" layer="21" font="vector">8</text>
+<text x="-8.89" y="-10.16" size="1.27" layer="25" font="vector">&gt;NAME</text>
 </package>
 <package name="HOPE-RF-14">
 <description>&lt;strong&gt;SMD package for HopeRF FSK 14-pin/pad transmitter/receiver modules&lt;/strong&gt;
@@ -569,6 +571,8 @@ This symbol is simplyfied and does not reproduce the inner workings of the relai
 <pin name="DIG_2" x="20.32" y="-12.7" length="middle" rot="R180"/>
 <pin name="SEG_DP_1" x="-17.78" y="-7.62" length="middle"/>
 <pin name="SEG_DP_2" x="20.32" y="-7.62" length="middle" rot="R180"/>
+<text x="-12.7" y="-18.288" size="1.778" layer="94">&gt;NAME</text>
+<text x="-12.7" y="-21.336" size="1.778" layer="94">&gt;VALUE</text>
 </symbol>
 <symbol name="7SEG_2DIG_NO_DP">
 <description>&lt;strong&gt;2-digit 7-segment display without decimal point&lt;/strong&gt;</description>
@@ -595,6 +599,8 @@ This symbol is simplyfied and does not reproduce the inner workings of the relai
 <pin name="SEG_G_2" x="20.32" y="-5.08" length="middle" rot="R180"/>
 <pin name="DIG_1" x="-17.78" y="-10.16" length="middle"/>
 <pin name="DIG_2" x="20.32" y="-10.16" length="middle" rot="R180"/>
+<text x="-12.7" y="-15.748" size="1.778" layer="94">&gt;NAME</text>
+<text x="-12.7" y="-18.796" size="1.778" layer="94">&gt;VALUE</text>
 </symbol>
 <symbol name="RFM01">
 <description>&lt;strong&gt;HopeRF RFM01 Universal ISM Band FSK Receiver&lt;/strong&gt;
