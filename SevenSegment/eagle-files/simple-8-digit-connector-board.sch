@@ -56,52 +56,10 @@
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="no" active="yes"/>
 <layer number="100" name="Muster" color="7" fill="1" visible="no" active="no"/>
-<layer number="101" name="Patch_Top" color="12" fill="4" visible="yes" active="yes"/>
-<layer number="102" name="Vscore" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="103" name="fp3" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="104" name="Name" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="105" name="Beschreib" color="9" fill="1" visible="yes" active="yes"/>
-<layer number="106" name="BGA-Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="107" name="BD-Top" color="5" fill="1" visible="yes" active="yes"/>
-<layer number="108" name="fp8" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="109" name="fp9" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="110" name="fp0" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="111" name="LPC17xx" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
-<layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="123" name="tTestmark" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="124" name="bTestmark" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="125" name="_tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="126" name="_bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="128" name="_bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="131" name="tAdjust" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="132" name="bAdjust" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="152" name="_bDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="200" name="200bmp" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="201" name="201bmp" color="2" fill="1" visible="no" active="no"/>
 <layer number="202" name="202bmp" color="3" fill="1" visible="no" active="no"/>
-<layer number="203" name="203bmp" color="4" fill="10" visible="yes" active="yes"/>
-<layer number="204" name="204bmp" color="5" fill="10" visible="yes" active="yes"/>
-<layer number="205" name="205bmp" color="6" fill="10" visible="yes" active="yes"/>
-<layer number="206" name="206bmp" color="7" fill="10" visible="yes" active="yes"/>
-<layer number="207" name="207bmp" color="8" fill="10" visible="yes" active="yes"/>
-<layer number="208" name="208bmp" color="9" fill="10" visible="yes" active="yes"/>
-<layer number="209" name="209bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="210" name="210bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="211" name="211bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="212" name="212bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="213" name="213bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="214" name="214bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="215" name="215bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="216" name="216bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="217" name="217bmp" color="18" fill="1" visible="no" active="no"/>
 <layer number="218" name="218bmp" color="19" fill="1" visible="no" active="no"/>
 <layer number="219" name="219bmp" color="20" fill="1" visible="no" active="no"/>
@@ -110,11 +68,8 @@
 <layer number="222" name="222bmp" color="23" fill="1" visible="no" active="no"/>
 <layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
 <layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
-<layer number="248" name="Housing" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="249" name="Edge" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="250" name="Descript" color="7" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="7" fill="1" visible="no" active="no"/>
-<layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
@@ -311,7 +266,7 @@ IC size 3.9mm x 9.9mm
 <wire x1="-4.94" y1="-1.265" x2="-4.94" y2="1.265" width="0.254" layer="21"/>
 <wire x1="4.94" y1="1.9" x2="4.94" y2="-1.4" width="0.2032" layer="51"/>
 <wire x1="4.94" y1="1.265" x2="4.94" y2="-1.265" width="0.254" layer="21"/>
-<circle x="-4.445" y="-0.635" radius="0.127" width="0.127" layer="21"/>
+<circle x="-4.445" y="-0.635" radius="0.127" width="0" layer="21"/>
 </package>
 <package name="R1206">
 <description>&lt;strong&gt;Resistor, SMD package 1206&lt;/strong&gt;</description>
@@ -470,6 +425,66 @@ IC size 3.9mm x 9.9mm
 <wire x1="0.762" y1="-10.16" x2="-0.762" y2="-10.16" width="0.254" layer="21"/>
 <wire x1="-0.762" y1="10.16" x2="0.762" y2="10.16" width="0.254" layer="21"/>
 <wire x1="-0.762" y1="10.16" x2="0.762" y2="10.16" width="0.127" layer="51"/>
+</package>
+<package name="SO-18W">
+<description>&lt;strong&gt;18-lead Small Outline Package Wide Body (0.3in / 7.5mm)&lt;/strong&gt;
+&lt;p&gt;SOIC18 (W)&lt;/p&gt;
+&lt;p&gt;As referenced in &lt;a href="http://www.microchip.com/packaging"&gt;http://www.microchip.com/packaging&lt;/a&gt; and &lt;a href="http://www.maxim-ic.com/design/packaging/index.mvp?a=2&amp;f="&gt;http://www.maxim-ic.com/design/packaging/index.mvp?a=2&amp;f=&lt;/a&gt;
+&lt;p&gt;Used documents (may not be available anymore):
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://pdfserv.maxim-ic.com/land_patterns/90-0181.PDF"&gt;http://pdfserv.maxim-ic.com/land_patterns/90-0181.PDF&lt;/a&gt;
+&lt;li&gt;&lt;a href="http://www.microchip.com/stellent/groups/techpub_sg/documents/packagingspec/en012702.pdf"&gt;http://www.microchip.com/stellent/groups/techpub_sg/documents/packagingspec/en012702.pdf&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<smd name="9" x="-4.8" y="-5.08" dx="1.75" dy="0.55" layer="1"/>
+<smd name="8" x="-4.8" y="-3.81" dx="1.75" dy="0.55" layer="1"/>
+<smd name="7" x="-4.8" y="-2.54" dx="1.75" dy="0.55" layer="1"/>
+<smd name="6" x="-4.8" y="-1.27" dx="1.75" dy="0.55" layer="1"/>
+<smd name="5" x="-4.8" y="0" dx="1.75" dy="0.55" layer="1"/>
+<smd name="4" x="-4.8" y="1.27" dx="1.75" dy="0.55" layer="1"/>
+<smd name="3" x="-4.8" y="2.54" dx="1.75" dy="0.55" layer="1"/>
+<smd name="2" x="-4.8" y="3.81" dx="1.75" dy="0.55" layer="1"/>
+<smd name="1" x="-4.8" y="5.08" dx="1.75" dy="0.55" layer="1"/>
+<smd name="10" x="4.8" y="-5.08" dx="1.75" dy="0.55" layer="1"/>
+<smd name="11" x="4.8" y="-3.81" dx="1.75" dy="0.55" layer="1"/>
+<smd name="12" x="4.8" y="-2.54" dx="1.75" dy="0.55" layer="1"/>
+<smd name="13" x="4.8" y="-1.27" dx="1.75" dy="0.55" layer="1"/>
+<smd name="14" x="4.8" y="0" dx="1.75" dy="0.55" layer="1"/>
+<smd name="15" x="4.8" y="1.27" dx="1.75" dy="0.55" layer="1"/>
+<smd name="16" x="4.8" y="2.54" dx="1.75" dy="0.55" layer="1"/>
+<smd name="17" x="4.8" y="3.81" dx="1.75" dy="0.55" layer="1"/>
+<smd name="18" x="4.8" y="5.08" dx="1.75" dy="0.55" layer="1"/>
+<wire x1="-3.65" y1="5.675" x2="3.65" y2="5.675" width="0.3048" layer="21"/>
+<wire x1="3.65" y1="5.675" x2="3.65" y2="-5.675" width="0.3048" layer="21"/>
+<wire x1="3.65" y1="-5.675" x2="-3.65" y2="-5.675" width="0.3048" layer="21"/>
+<wire x1="-3.65" y1="-5.675" x2="-3.65" y2="5.675" width="0.3048" layer="21"/>
+<wire x1="-3.65" y1="5.675" x2="3.65" y2="5.675" width="0.127" layer="51"/>
+<wire x1="3.65" y1="5.675" x2="3.65" y2="-5.675" width="0.127" layer="51"/>
+<wire x1="3.65" y1="-5.675" x2="-3.65" y2="-5.675" width="0.127" layer="51"/>
+<wire x1="-3.65" y1="-5.675" x2="-3.65" y2="5.675" width="0.127" layer="51"/>
+<rectangle x1="-5.35" y1="4.96" x2="-3.65" y2="5.24" layer="51"/>
+<rectangle x1="-5.35" y1="3.66" x2="-3.65" y2="3.94" layer="51"/>
+<rectangle x1="-5.35" y1="2.41" x2="-3.65" y2="2.69" layer="51"/>
+<rectangle x1="-5.35" y1="1.16" x2="-3.65" y2="1.44" layer="51"/>
+<rectangle x1="-5.35" y1="-0.14" x2="-3.65" y2="0.14" layer="51"/>
+<rectangle x1="-5.36" y1="-1.41" x2="-3.66" y2="-1.13" layer="51"/>
+<rectangle x1="-5.35" y1="-2.69" x2="-3.66" y2="-2.41" layer="51"/>
+<rectangle x1="-5.35" y1="-3.94" x2="-3.65" y2="-3.66" layer="51"/>
+<rectangle x1="-5.35" y1="-5.24" x2="-3.65" y2="-4.96" layer="51"/>
+<rectangle x1="3.65" y1="4.96" x2="5.35" y2="5.24" layer="51"/>
+<rectangle x1="3.65" y1="3.66" x2="5.35" y2="3.94" layer="51"/>
+<rectangle x1="3.65" y1="2.41" x2="5.35" y2="2.69" layer="51"/>
+<rectangle x1="3.65" y1="1.16" x2="5.35" y2="1.44" layer="51"/>
+<rectangle x1="3.65" y1="-0.14" x2="5.35" y2="0.14" layer="51"/>
+<rectangle x1="3.64" y1="-1.41" x2="5.34" y2="-1.13" layer="51"/>
+<rectangle x1="3.65" y1="-2.69" x2="5.34" y2="-2.41" layer="51"/>
+<rectangle x1="3.65" y1="-3.94" x2="5.35" y2="-3.66" layer="51"/>
+<rectangle x1="3.65" y1="-5.24" x2="5.35" y2="-4.96" layer="51"/>
+<circle x="-3.03" y="5.01" radius="0.22360625" width="0" layer="51"/>
+<circle x="-3.02" y="5.01" radius="0.360553125" width="0" layer="21"/>
+<wire x1="-2.3" y1="5.7" x2="-2.3" y2="-5.6" width="0.127" layer="51"/>
+<text x="-3.6" y="6.1" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="0" y="5.1" size="1.27" layer="27" font="vector" rot="SR270" align="center-left">&gt;VALUE</text>
+<wire x1="-2.31" y1="5.63" x2="-2.3" y2="-5.6" width="0.4064" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -736,7 +751,7 @@ voltage.&lt;/p&gt;</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="74*4017">
+<deviceset name="74*4017" prefix="IC">
 <description>&lt;strong&gt;74*4017 Decade Counter/Divider&lt;/strong&gt;
 &lt;br/&gt;&lt;br/&gt;
 The74*4017 is a high speed CMOS DECADE
@@ -813,9 +828,7 @@ low.</description>
 &lt;p&gt;The ULN2801A-ULN2805Aeach contain eight darlington transistors with common emitters and integral
 suppression diodes for inductive loads. Each darlington features a peak load current rating of 600mA (500mA continuous) and can withstand at least 50V in the off state. Outputsmaybe paralleled for higher current capability.&lt;/p&gt;
 
-&lt;p&gt;Five versions are available to simplify interfacing to standard logic families : the ULN2801Ais designed for generalpurpose applicationswith a current limit resistor; the ULN2802Ahas a 10.5kW inputresistor and zener for 14-25VPMOS; theULN2803A has a2.7kW input resistor for 5V TTL and CMOS ; the ULN2804A has a 10.5kW input resistor for 6-15V CMOS and the ULN2805A is designed to sink a minimum of 350mA for standard and Schottky TTL where higher output current is required.&lt;/p&gt;
-
-&lt;p&gt;All types are supplied in a 18-lead plastic DIP with a copper lead from and feature the convenient input-opposite-output pinout to simplify board layout.&lt;/p&gt;</description>
+&lt;p&gt;Five versions are available to simplify interfacing to standard logic families : the ULN2801Ais designed for generalpurpose applicationswith a current limit resistor; the ULN2802Ahas a 10.5kW inputresistor and zener for 14-25VPMOS; theULN2803A has a2.7kW input resistor for 5V TTL and CMOS ; the ULN2804A has a 10.5kW input resistor for 6-15V CMOS and the ULN2805A is designed to sink a minimum of 350mA for standard and Schottky TTL where higher output current is required.&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="ULN280X" x="0" y="-2.54"/>
 </gates>
@@ -845,9 +858,34 @@ suppression diodes for inductive loads. Each darlington features a peak load cur
 <technology name=""/>
 </technologies>
 </device>
+<device name="-SO18" package="SO-18W">
+<connects>
+<connect gate="G$1" pin="COM" pad="10"/>
+<connect gate="G$1" pin="GND" pad="9"/>
+<connect gate="G$1" pin="IN_1" pad="1"/>
+<connect gate="G$1" pin="IN_2" pad="2"/>
+<connect gate="G$1" pin="IN_3" pad="3"/>
+<connect gate="G$1" pin="IN_4" pad="4"/>
+<connect gate="G$1" pin="IN_5" pad="5"/>
+<connect gate="G$1" pin="IN_6" pad="6"/>
+<connect gate="G$1" pin="IN_7" pad="7"/>
+<connect gate="G$1" pin="IN_8" pad="8"/>
+<connect gate="G$1" pin="OUT_1" pad="18"/>
+<connect gate="G$1" pin="OUT_2" pad="17"/>
+<connect gate="G$1" pin="OUT_3" pad="16"/>
+<connect gate="G$1" pin="OUT_4" pad="15"/>
+<connect gate="G$1" pin="OUT_5" pad="14"/>
+<connect gate="G$1" pin="OUT_6" pad="13"/>
+<connect gate="G$1" pin="OUT_7" pad="12"/>
+<connect gate="G$1" pin="OUT_8" pad="11"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
-<deviceset name="74*595">
+<deviceset name="74*595" prefix="IC">
 <description>&lt;strong&gt;74*595 8-Bit Shift Register&lt;/strong&gt;
 &lt;p&gt;The 74*595 is an 8-BIT
 SHIFT REGISTERS/OUTPUT LATCHES
@@ -1045,10 +1083,10 @@ voltage.&lt;/p&gt;</description>
 <part name="T8" library="icmi-custom-parts" deviceset="2N7002" device="-SOT23"/>
 <part name="P+1" library="supply1" deviceset="VCC" device=""/>
 <part name="P+2" library="supply1" deviceset="VCC" device=""/>
-<part name="IC1" library="icmi-custom-parts" deviceset="74*4017" device="-DIP16"/>
+<part name="IC1" library="icmi-custom-parts" deviceset="74*4017" device="-SO16"/>
 <part name="P+3" library="supply1" deviceset="VCC" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
-<part name="IC3" library="icmi-custom-parts" deviceset="ULN280X" device="-DIP18"/>
+<part name="IC3" library="icmi-custom-parts" deviceset="ULN280X" device="-SO18"/>
 <part name="IC2" library="icmi-custom-parts" deviceset="74*595" device="-SO16"/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
