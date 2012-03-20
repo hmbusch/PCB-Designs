@@ -916,7 +916,7 @@ IC size 3.9mm x 9.9mm
 <wire x1="-4.94" y1="-1.265" x2="-4.94" y2="1.265" width="0.254" layer="21"/>
 <wire x1="4.94" y1="1.9" x2="4.94" y2="-1.4" width="0.2032" layer="51"/>
 <wire x1="4.94" y1="1.265" x2="4.94" y2="-1.265" width="0.254" layer="21"/>
-<circle x="-4.445" y="-0.635" radius="0.127" width="0.127" layer="21"/>
+<circle x="-4.445" y="-0.635" radius="0.127" width="0" layer="21"/>
 </package>
 <package name="BREAKAWAY_STRAIGHT_2_WIDE">
 <pad name="2" x="0" y="1.27" drill="0.8" shape="long"/>
@@ -1278,6 +1278,66 @@ IC size 3.9mm x 9.9mm
 <wire x1="-10.27" y1="1" x2="-10.27" y2="-1" width="0.127" layer="51" curve="-180"/>
 <pad name="10" x="11.43" y="5.08" drill="0.8" shape="long" rot="R90"/>
 <pad name="9" x="11.43" y="-5.08" drill="0.8" shape="long" rot="R90"/>
+</package>
+<package name="SO-18W">
+<description>&lt;strong&gt;18-lead Small Outline Package Wide Body (0.3in / 7.5mm)&lt;/strong&gt;
+&lt;p&gt;SOIC18 (W)&lt;/p&gt;
+&lt;p&gt;As referenced in &lt;a href="http://www.microchip.com/packaging"&gt;http://www.microchip.com/packaging&lt;/a&gt; and &lt;a href="http://www.maxim-ic.com/design/packaging/index.mvp?a=2&amp;f="&gt;http://www.maxim-ic.com/design/packaging/index.mvp?a=2&amp;f=&lt;/a&gt;
+&lt;p&gt;Used documents (may not be available anymore):
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://pdfserv.maxim-ic.com/land_patterns/90-0181.PDF"&gt;http://pdfserv.maxim-ic.com/land_patterns/90-0181.PDF&lt;/a&gt;
+&lt;li&gt;&lt;a href="http://www.microchip.com/stellent/groups/techpub_sg/documents/packagingspec/en012702.pdf"&gt;http://www.microchip.com/stellent/groups/techpub_sg/documents/packagingspec/en012702.pdf&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<smd name="9" x="-4.8" y="-5.08" dx="1.75" dy="0.55" layer="1"/>
+<smd name="8" x="-4.8" y="-3.81" dx="1.75" dy="0.55" layer="1"/>
+<smd name="7" x="-4.8" y="-2.54" dx="1.75" dy="0.55" layer="1"/>
+<smd name="6" x="-4.8" y="-1.27" dx="1.75" dy="0.55" layer="1"/>
+<smd name="5" x="-4.8" y="0" dx="1.75" dy="0.55" layer="1"/>
+<smd name="4" x="-4.8" y="1.27" dx="1.75" dy="0.55" layer="1"/>
+<smd name="3" x="-4.8" y="2.54" dx="1.75" dy="0.55" layer="1"/>
+<smd name="2" x="-4.8" y="3.81" dx="1.75" dy="0.55" layer="1"/>
+<smd name="1" x="-4.8" y="5.08" dx="1.75" dy="0.55" layer="1"/>
+<smd name="10" x="4.8" y="-5.08" dx="1.75" dy="0.55" layer="1"/>
+<smd name="11" x="4.8" y="-3.81" dx="1.75" dy="0.55" layer="1"/>
+<smd name="12" x="4.8" y="-2.54" dx="1.75" dy="0.55" layer="1"/>
+<smd name="13" x="4.8" y="-1.27" dx="1.75" dy="0.55" layer="1"/>
+<smd name="14" x="4.8" y="0" dx="1.75" dy="0.55" layer="1"/>
+<smd name="15" x="4.8" y="1.27" dx="1.75" dy="0.55" layer="1"/>
+<smd name="16" x="4.8" y="2.54" dx="1.75" dy="0.55" layer="1"/>
+<smd name="17" x="4.8" y="3.81" dx="1.75" dy="0.55" layer="1"/>
+<smd name="18" x="4.8" y="5.08" dx="1.75" dy="0.55" layer="1"/>
+<wire x1="-3.65" y1="5.675" x2="3.65" y2="5.675" width="0.3048" layer="21"/>
+<wire x1="3.65" y1="5.675" x2="3.65" y2="-5.675" width="0.3048" layer="21"/>
+<wire x1="3.65" y1="-5.675" x2="-3.65" y2="-5.675" width="0.3048" layer="21"/>
+<wire x1="-3.65" y1="-5.675" x2="-3.65" y2="5.675" width="0.3048" layer="21"/>
+<wire x1="-3.65" y1="5.675" x2="3.65" y2="5.675" width="0.127" layer="51"/>
+<wire x1="3.65" y1="5.675" x2="3.65" y2="-5.675" width="0.127" layer="51"/>
+<wire x1="3.65" y1="-5.675" x2="-3.65" y2="-5.675" width="0.127" layer="51"/>
+<wire x1="-3.65" y1="-5.675" x2="-3.65" y2="5.675" width="0.127" layer="51"/>
+<rectangle x1="-5.35" y1="4.96" x2="-3.65" y2="5.24" layer="51"/>
+<rectangle x1="-5.35" y1="3.66" x2="-3.65" y2="3.94" layer="51"/>
+<rectangle x1="-5.35" y1="2.41" x2="-3.65" y2="2.69" layer="51"/>
+<rectangle x1="-5.35" y1="1.16" x2="-3.65" y2="1.44" layer="51"/>
+<rectangle x1="-5.35" y1="-0.14" x2="-3.65" y2="0.14" layer="51"/>
+<rectangle x1="-5.36" y1="-1.41" x2="-3.66" y2="-1.13" layer="51"/>
+<rectangle x1="-5.35" y1="-2.69" x2="-3.66" y2="-2.41" layer="51"/>
+<rectangle x1="-5.35" y1="-3.94" x2="-3.65" y2="-3.66" layer="51"/>
+<rectangle x1="-5.35" y1="-5.24" x2="-3.65" y2="-4.96" layer="51"/>
+<rectangle x1="3.65" y1="4.96" x2="5.35" y2="5.24" layer="51"/>
+<rectangle x1="3.65" y1="3.66" x2="5.35" y2="3.94" layer="51"/>
+<rectangle x1="3.65" y1="2.41" x2="5.35" y2="2.69" layer="51"/>
+<rectangle x1="3.65" y1="1.16" x2="5.35" y2="1.44" layer="51"/>
+<rectangle x1="3.65" y1="-0.14" x2="5.35" y2="0.14" layer="51"/>
+<rectangle x1="3.64" y1="-1.41" x2="5.34" y2="-1.13" layer="51"/>
+<rectangle x1="3.65" y1="-2.69" x2="5.34" y2="-2.41" layer="51"/>
+<rectangle x1="3.65" y1="-3.94" x2="5.35" y2="-3.66" layer="51"/>
+<rectangle x1="3.65" y1="-5.24" x2="5.35" y2="-4.96" layer="51"/>
+<circle x="-3.03" y="5.01" radius="0.22360625" width="0" layer="51"/>
+<circle x="-3.02" y="5.01" radius="0.360553125" width="0" layer="21"/>
+<wire x1="-2.3" y1="5.7" x2="-2.3" y2="-5.6" width="0.127" layer="51"/>
+<text x="-3.6" y="6.1" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="0" y="5.1" size="1.27" layer="27" font="vector" rot="SR270" align="center-left">&gt;VALUE</text>
+<wire x1="-2.31" y1="5.63" x2="-2.3" y2="-5.6" width="0.4064" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -2146,14 +2206,37 @@ low.</description>
 &lt;p&gt;The ULN2801A-ULN2805Aeach contain eight darlington transistors with common emitters and integral
 suppression diodes for inductive loads. Each darlington features a peak load current rating of 600mA (500mA continuous) and can withstand at least 50V in the off state. Outputsmaybe paralleled for higher current capability.&lt;/p&gt;
 
-&lt;p&gt;Five versions are available to simplify interfacing to standard logic families : the ULN2801Ais designed for generalpurpose applicationswith a current limit resistor; the ULN2802Ahas a 10.5kW inputresistor and zener for 14-25VPMOS; theULN2803A has a2.7kW input resistor for 5V TTL and CMOS ; the ULN2804A has a 10.5kW input resistor for 6-15V CMOS and the ULN2805A is designed to sink a minimum of 350mA for standard and Schottky TTL where higher output current is required.&lt;/p&gt;
-
-&lt;p&gt;All types are supplied in a 18-lead plastic DIP with a copper lead from and feature the convenient input-opposite-output pinout to simplify board layout.&lt;/p&gt;</description>
+&lt;p&gt;Five versions are available to simplify interfacing to standard logic families : the ULN2801Ais designed for generalpurpose applicationswith a current limit resistor; the ULN2802Ahas a 10.5kW inputresistor and zener for 14-25VPMOS; theULN2803A has a2.7kW input resistor for 5V TTL and CMOS ; the ULN2804A has a 10.5kW input resistor for 6-15V CMOS and the ULN2805A is designed to sink a minimum of 350mA for standard and Schottky TTL where higher output current is required.&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="ULN280X" x="0" y="-2.54"/>
 </gates>
 <devices>
 <device name="-DIP18" package="DIP-18">
+<connects>
+<connect gate="G$1" pin="COM" pad="10"/>
+<connect gate="G$1" pin="GND" pad="9"/>
+<connect gate="G$1" pin="IN_1" pad="1"/>
+<connect gate="G$1" pin="IN_2" pad="2"/>
+<connect gate="G$1" pin="IN_3" pad="3"/>
+<connect gate="G$1" pin="IN_4" pad="4"/>
+<connect gate="G$1" pin="IN_5" pad="5"/>
+<connect gate="G$1" pin="IN_6" pad="6"/>
+<connect gate="G$1" pin="IN_7" pad="7"/>
+<connect gate="G$1" pin="IN_8" pad="8"/>
+<connect gate="G$1" pin="OUT_1" pad="18"/>
+<connect gate="G$1" pin="OUT_2" pad="17"/>
+<connect gate="G$1" pin="OUT_3" pad="16"/>
+<connect gate="G$1" pin="OUT_4" pad="15"/>
+<connect gate="G$1" pin="OUT_5" pad="14"/>
+<connect gate="G$1" pin="OUT_6" pad="13"/>
+<connect gate="G$1" pin="OUT_7" pad="12"/>
+<connect gate="G$1" pin="OUT_8" pad="11"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-SO18" package="SO-18W">
 <connects>
 <connect gate="G$1" pin="COM" pad="10"/>
 <connect gate="G$1" pin="GND" pad="9"/>
