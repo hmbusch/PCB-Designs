@@ -1769,49 +1769,49 @@ voltage.&lt;/p&gt;</description>
 <label x="180.34" y="-45.72" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="DA_IN_1" class="0">
 <segment>
 <pinref part="IC2" gate="G$1" pin="QA"/>
 <pinref part="IC3" gate="G$1" pin="IN_1"/>
 <wire x1="167.64" y1="86.36" x2="182.88" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="DA_IN_2" class="0">
 <segment>
 <pinref part="IC2" gate="G$1" pin="QB"/>
 <pinref part="IC3" gate="G$1" pin="IN_2"/>
 <wire x1="167.64" y1="83.82" x2="182.88" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="DA_IN_3" class="0">
 <segment>
 <pinref part="IC2" gate="G$1" pin="QC"/>
 <pinref part="IC3" gate="G$1" pin="IN_3"/>
 <wire x1="167.64" y1="81.28" x2="182.88" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="DA_IN_4" class="0">
 <segment>
 <pinref part="IC2" gate="G$1" pin="QD"/>
 <pinref part="IC3" gate="G$1" pin="IN_4"/>
 <wire x1="167.64" y1="78.74" x2="182.88" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$5" class="0">
+<net name="DA_IN_5" class="0">
 <segment>
 <pinref part="IC2" gate="G$1" pin="QE"/>
 <pinref part="IC3" gate="G$1" pin="IN_5"/>
 <wire x1="167.64" y1="76.2" x2="182.88" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$6" class="0">
+<net name="DA_IN_6" class="0">
 <segment>
 <pinref part="IC2" gate="G$1" pin="QF"/>
 <pinref part="IC3" gate="G$1" pin="IN_6"/>
 <wire x1="167.64" y1="73.66" x2="182.88" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$7" class="0">
+<net name="DA_IN_7" class="0">
 <segment>
 <pinref part="IC2" gate="G$1" pin="QG"/>
 <pinref part="IC3" gate="G$1" pin="IN_7"/>
@@ -1894,7 +1894,7 @@ voltage.&lt;/p&gt;</description>
 <label x="261.62" y="-12.7" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$8" class="0">
+<net name="DA_OUT_1" class="0">
 <segment>
 <pinref part="IC3" gate="G$1" pin="OUT_1"/>
 <wire x1="213.36" y1="86.36" x2="215.9" y2="86.36" width="0.1524" layer="91"/>
@@ -1904,7 +1904,7 @@ voltage.&lt;/p&gt;</description>
 <wire x1="223.52" y1="99.06" x2="228.6" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$9" class="0">
+<net name="DA_OUT_2" class="0">
 <segment>
 <pinref part="IC3" gate="G$1" pin="OUT_2"/>
 <wire x1="213.36" y1="83.82" x2="215.9" y2="83.82" width="0.1524" layer="91"/>
@@ -1913,7 +1913,7 @@ voltage.&lt;/p&gt;</description>
 <wire x1="223.52" y1="91.44" x2="228.6" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$10" class="0">
+<net name="DA_OUT_3" class="0">
 <segment>
 <pinref part="IC3" gate="G$1" pin="OUT_3"/>
 <wire x1="213.36" y1="81.28" x2="223.52" y2="81.28" width="0.1524" layer="91"/>
@@ -1922,7 +1922,7 @@ voltage.&lt;/p&gt;</description>
 <wire x1="226.06" y1="83.82" x2="228.6" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$11" class="0">
+<net name="DA_OUT_4" class="0">
 <segment>
 <pinref part="IC3" gate="G$1" pin="OUT_4"/>
 <wire x1="213.36" y1="78.74" x2="223.52" y2="78.74" width="0.1524" layer="91"/>
@@ -1931,7 +1931,7 @@ voltage.&lt;/p&gt;</description>
 <wire x1="226.06" y1="76.2" x2="228.6" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$12" class="0">
+<net name="DA_OUT_5" class="0">
 <segment>
 <pinref part="IC3" gate="G$1" pin="OUT_5"/>
 <wire x1="213.36" y1="76.2" x2="215.9" y2="76.2" width="0.1524" layer="91"/>
@@ -1940,7 +1940,7 @@ voltage.&lt;/p&gt;</description>
 <wire x1="223.52" y1="68.58" x2="228.6" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$13" class="0">
+<net name="DA_OUT_6" class="0">
 <segment>
 <pinref part="IC3" gate="G$1" pin="OUT_6"/>
 <pinref part="R6" gate="G$1" pin="1"/>
@@ -1948,7 +1948,7 @@ voltage.&lt;/p&gt;</description>
 <wire x1="215.9" y1="73.66" x2="228.6" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$14" class="0">
+<net name="DA_OUT_7" class="0">
 <segment>
 <pinref part="IC3" gate="G$1" pin="OUT_7"/>
 <wire x1="213.36" y1="71.12" x2="215.9" y2="71.12" width="0.1524" layer="91"/>
