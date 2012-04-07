@@ -44,7 +44,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="16" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="16" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -1349,6 +1349,39 @@ IC size 3.9mm x 9.9mm
 <wire x1="1.27" y1="9.525" x2="7.62" y2="9.525" width="0.254" layer="21"/>
 <wire x1="7.62" y1="8.89" x2="7.62" y2="-8.89" width="0.254" layer="21"/>
 </package>
+<package name="PLCC6">
+<description>&lt;h1&gt;PLCC6 - Plastic Lead Chip Carrier w/ 6 pins&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;4x 1.4x2.0mm pads (&lt;code&gt;(-1.8 2.2) (1.8 2.2) (-1.8 -2.2) (1.8 -2.2)&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;2x 1.0x2.0mm pads (&lt;code&gt;(0 2.2) (0 -2.2)&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Footprint taken from &lt;a href="http://www.bivar.com/Images/Cart/SMP6-RGB.pdf"&gt;Bivar SMP6-RGB LED datasheet&lt;/a&gt;&lt;/p&gt;</description>
+<smd name="P$1" x="-1.8" y="2.2" dx="1.4" dy="2" layer="1"/>
+<smd name="P$5" x="1.8" y="2.2" dx="1.4" dy="2" layer="1"/>
+<smd name="P$2" x="-1.8" y="-2.2" dx="1.4" dy="2" layer="1"/>
+<smd name="P$6" x="1.8" y="-2.2" dx="1.4" dy="2" layer="1"/>
+<smd name="P$3" x="0" y="2.2" dx="1" dy="2" layer="1"/>
+<smd name="P$4" x="0" y="-2.2" dx="1" dy="2" layer="1"/>
+<wire x1="-2.5" y1="2.5" x2="2" y2="2.5" width="0.127" layer="51"/>
+<wire x1="2.5" y1="2" x2="2.5" y2="-2.5" width="0.127" layer="51"/>
+<wire x1="2.5" y1="-2.5" x2="-2.5" y2="-2.5" width="0.127" layer="51"/>
+<wire x1="-2.5" y1="-2.5" x2="-2.5" y2="2.5" width="0.127" layer="51"/>
+<wire x1="2" y1="2.5" x2="2.5" y2="2" width="0.127" layer="51"/>
+<wire x1="-2.8" y1="3.4" x2="2.8" y2="3.4" width="0.127" layer="39"/>
+<wire x1="2.8" y1="3.4" x2="2.8" y2="-3.4" width="0.127" layer="39"/>
+<wire x1="2.8" y1="-3.4" x2="-2.8" y2="-3.4" width="0.127" layer="39"/>
+<wire x1="-2.8" y1="-3.4" x2="-2.8" y2="3.4" width="0.127" layer="39"/>
+<circle x="0" y="0" radius="2" width="0.127" layer="51"/>
+<wire x1="-3" y1="3.6" x2="2.5" y2="3.6" width="0.2032" layer="21"/>
+<wire x1="2.5" y1="3.6" x2="3" y2="3.6" width="0.2032" layer="21"/>
+<wire x1="3" y1="3.6" x2="3" y2="3.1" width="0.2032" layer="21"/>
+<wire x1="3" y1="3.1" x2="3" y2="-3.6" width="0.2032" layer="21"/>
+<wire x1="3" y1="-3.6" x2="-3" y2="-3.6" width="0.2032" layer="21"/>
+<wire x1="-3" y1="-3.6" x2="-3" y2="3.6" width="0.2032" layer="21"/>
+<wire x1="2.5" y1="3.6" x2="3" y2="3.1" width="0.2032" layer="21"/>
+<text x="-2.875" y="3.91" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="-2.875" y="-5.09" size="1.27" layer="27" font="vector">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="MRBS2">
@@ -2395,6 +2428,33 @@ voltage.&lt;/p&gt;</description>
 <connect gate="G$1" pin="6" pad="6"/>
 <connect gate="G$1" pin="7" pad="7"/>
 <connect gate="G$1" pin="8" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LED-RGB" uservalue="yes">
+<description>&lt;h1&gt;RGB LED - 3 LEDS (red/green/blue) in one package&lt;/h1&gt;
+&lt;p&gt;
+The PLCC6 variant has the anodes on pins 1, 3 and 5 and the cathodes on 2,4 and 6 with the color order as follows: green (pin 1&amp;2), red (pins 3&amp;4), blue (pin 5&amp;6).&lt;br/&gt;
+This pin assignment might differ between PLCC6-LEDs from different manufacturers. You have been warned. When in doubt, recheck before soldering.
+&lt;/p&gt;</description>
+<gates>
+<gate name="RED" symbol="LED" x="-15.24" y="-2.54"/>
+<gate name="GREEN" symbol="LED" x="-5.08" y="-2.54"/>
+<gate name="BLUE" symbol="LED" x="5.08" y="-2.54"/>
+</gates>
+<devices>
+<device name="-PLCC6" package="PLCC6">
+<connects>
+<connect gate="BLUE" pin="ANODE" pad="P$5"/>
+<connect gate="BLUE" pin="CATHODE" pad="P$6"/>
+<connect gate="GREEN" pin="ANODE" pad="P$1"/>
+<connect gate="GREEN" pin="CATHODE" pad="P$2"/>
+<connect gate="RED" pin="ANODE" pad="P$3"/>
+<connect gate="RED" pin="CATHODE" pad="P$4"/>
 </connects>
 <technologies>
 <technology name=""/>
