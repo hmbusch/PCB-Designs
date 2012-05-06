@@ -54,7 +54,7 @@
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
 </layers>
-<library>
+<library name="ICMI Custom Parts - Connectors">
 <description>&lt;h1&gt;ICMI Custom Parts - Connectors&lt;/h1&gt;
 &lt;p&gt;This library contains basic connectors (mainly pin headers) with various different packages.&lt;/p&gt;
   &lt;p&gt;You can always find the latest version of this library under &lt;a
