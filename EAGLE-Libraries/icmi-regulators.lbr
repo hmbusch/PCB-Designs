@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="6.2">
+<drawing>
+<settings>
+<setting alwaysvectorfont="yes"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="17" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="yes" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="yes" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="yes" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="yes" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="16" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+</layers>
+<library>
+<description>&lt;h1&gt;ICMI Custom Parts - Voltage/Current Regulators&lt;/h1&gt;
+                &lt;p&gt;This library contains a selection of voltage and current regulators.&lt;/p&gt;
+                &lt;p&gt;You can always find the latest version of this library under &lt;a
+                href="https://github.com/hmbusch/PCB-Designs/tree/master/EAGLE-Libraries"&gt;https://github.com/hmbusch/PCB-Designs/tree/master/EAGLE-Libraries&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Dataset"
+                property="dct:title" rel="dct:type"&gt;ICMI Custom Parts for EAGLE&lt;/span&gt; by &lt;a
+                xmlns:cc="http://creativecommons.org/ns#"
+                href="https://github.com/hmbusch/PCB-Designs/tree/master/EAGLE-Libraries" property="cc:attributionName"
+                rel="cc:attributionURL"&gt;Hendrik Busch&lt;/a&gt; is licensed under a &lt;a rel="license"
+                href="http://creativecommons.org/licenses/by-nc-sa/3.0/de/"&gt;Creative Commons
+                Attribution-NonCommercial-ShareAlike 3.0 Germany License&lt;/a&gt;.&lt;/p&gt;
+                &lt;p&gt;&lt;a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/de/"&gt;&lt;img
+                alt="Creative Commons License" style="border-width:0"
+                src="http://i.creativecommons.org/l/by-nc-sa/3.0/de/88x31.png" /&gt;&lt;/a&gt;&lt;/p&gt;</description>
+<packages>
+<package name="TO-220">
+<description>&lt;h1&gt;TO-220 package, upright&lt;/h1&gt;</description>
+<pad name="P$2" x="0" y="0" drill="1" shape="long" rot="R90"/>
+<pad name="P$3" x="2.54" y="0" drill="1" shape="long" rot="R90"/>
+<pad name="P$1" x="-2.54" y="0" drill="1" shape="long" rot="R90"/>
+<wire x1="-5.1" y1="2.8" x2="5.1" y2="2.8" width="0.127" layer="51"/>
+<wire x1="5.1" y1="2.8" x2="5.1" y2="1.5" width="0.127" layer="51"/>
+<wire x1="5.1" y1="1.5" x2="5.1" y2="-1.8" width="0.127" layer="51"/>
+<wire x1="5.1" y1="-1.8" x2="-5.1" y2="-1.8" width="0.127" layer="51"/>
+<wire x1="-5.1" y1="2.8" x2="-5.1" y2="1.5" width="0.127" layer="51"/>
+<wire x1="-5.1" y1="1.5" x2="-5.1" y2="-1.8" width="0.127" layer="51"/>
+<wire x1="-5.1" y1="1.5" x2="5.1" y2="1.5" width="0.127" layer="51"/>
+<wire x1="-5.1" y1="2.8" x2="-5.1" y2="1.5" width="0.2032" layer="21"/>
+<wire x1="-5.1" y1="1.5" x2="-5.1" y2="-1.8" width="0.2032" layer="21"/>
+<wire x1="5.1" y1="-1.8" x2="-5.1" y2="-1.8" width="0.2032" layer="21"/>
+<wire x1="5.1" y1="2.8" x2="5.1" y2="1.5" width="0.2032" layer="21"/>
+<wire x1="5.1" y1="1.5" x2="5.1" y2="-1.8" width="0.2032" layer="21"/>
+<wire x1="-5.1" y1="2.8" x2="5.1" y2="2.8" width="0.2032" layer="21"/>
+<wire x1="-5.1" y1="1.5" x2="-3.4" y2="1.5" width="0.2032" layer="21"/>
+<wire x1="5.1" y1="1.5" x2="3.4" y2="1.5" width="0.2032" layer="21"/>
+<wire x1="-0.9" y1="1.5" x2="-1.7" y2="1.5" width="0.2032" layer="21"/>
+<wire x1="0.9" y1="1.5" x2="1.7" y2="1.5" width="0.2032" layer="21"/>
+<circle x="-4.25" y="-1" radius="0.25" width="0.5" layer="21"/>
+<circle x="-4.25" y="-1" radius="0.25" width="0.5" layer="51"/>
+<text x="-4.5" y="0" size="1.016" layer="21" font="vector">1</text>
+<text x="-4.5" y="0" size="1.016" layer="51" font="vector">1</text>
+<text x="-5" y="3" size="1.27" layer="25">&gt;NAME</text>
+</package>
+</packages>
+<symbols>
+</symbols>
+<devicesets>
+</devicesets>
+</library>
+</drawing>
+</eagle>
