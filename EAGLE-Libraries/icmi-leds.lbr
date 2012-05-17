@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -47,7 +47,7 @@
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
@@ -246,6 +246,24 @@
 <text x="-2.54" y="1.6" size="0.8128" layer="25">&gt;NAME</text>
 <text x="-2.54" y="-1.6" size="0.8128" layer="27" align="top-left">&gt;VALUE</text>
 </package>
+<package name="LED_RGB_5MM">
+<description>&lt;h1&gt;RGB LED, 5mm&lt;/h1&gt;</description>
+<pad name="A/C" x="0.875" y="0" drill="0.6" diameter="1.27" shape="square"/>
+<pad name="GREEN" x="-0.875" y="0" drill="0.6" diameter="1.27"/>
+<pad name="RED" x="2.625" y="0" drill="0.6" diameter="1.27"/>
+<pad name="BLUE" x="-2.625" y="0" drill="0.6" diameter="1.27" rot="R180"/>
+<wire x1="2.54" y1="-1.905" x2="2.54" y2="1.905" width="0.2032" layer="21"/>
+<wire x1="2.54" y1="-1.905" x2="2.54" y2="1.905" width="0.254" layer="21" curve="-286.260205"/>
+<wire x1="-1.143" y1="0" x2="0" y2="1.143" width="0.1524" layer="51" curve="-90"/>
+<wire x1="0" y1="-1.143" x2="1.143" y2="0" width="0.1524" layer="51" curve="90"/>
+<wire x1="-1.651" y1="0" x2="0" y2="1.651" width="0.1524" layer="51" curve="-90"/>
+<wire x1="0" y1="-1.651" x2="1.651" y2="0" width="0.1524" layer="51" curve="90"/>
+<wire x1="-2.159" y1="0" x2="0" y2="2.159" width="0.1524" layer="51" curve="-90"/>
+<wire x1="0" y1="-2.159" x2="2.159" y2="0" width="0.1524" layer="51" curve="90"/>
+<circle x="0" y="0" radius="2.54" width="0.1524" layer="21"/>
+<text x="3.81" y="1.27" size="1.27" layer="25" align="center-left">&gt;NAME</text>
+<text x="3.81" y="-1.27" size="1.27" layer="27" align="center-left">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="LED">
@@ -256,7 +274,6 @@
 <wire x1="0" y1="0" x2="-1.27" y2="0" width="0.254" layer="94"/>
 <wire x1="1.27" y1="2.54" x2="0" y2="2.54" width="0.254" layer="94"/>
 <wire x1="0" y1="2.54" x2="-1.27" y2="2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="2.54" x2="0" y2="0" width="0.1524" layer="94"/>
 <wire x1="-2.032" y1="1.778" x2="-3.429" y2="0.381" width="0.1524" layer="94"/>
 <wire x1="-1.905" y1="0.635" x2="-3.302" y2="-0.762" width="0.1524" layer="94"/>
 <text x="3.556" y="-2.032" size="1.778" layer="95" rot="R90">&gt;NAME</text>
@@ -332,6 +349,76 @@
 <pin name="DIG_1" x="-17.78" y="-10.16" length="middle"/>
 <pin name="DIG_2" x="20.32" y="-10.16" length="middle" rot="R180"/>
 <text x="-12.7" y="13.716" size="1.778" layer="95">&gt;NAME</text>
+</symbol>
+<symbol name="RGB-LED-CA">
+<wire x1="1.27" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="-1.27" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.032" y1="-0.762" x2="-3.429" y2="-2.159" width="0.1524" layer="94"/>
+<wire x1="-1.905" y1="-1.905" x2="-3.302" y2="-3.302" width="0.1524" layer="94"/>
+<polygon width="0.1524" layer="94">
+<vertex x="-3.429" y="-2.159"/>
+<vertex x="-3.048" y="-1.27"/>
+<vertex x="-2.54" y="-1.778"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="-3.302" y="-3.302"/>
+<vertex x="-2.921" y="-2.413"/>
+<vertex x="-2.413" y="-2.921"/>
+</polygon>
+<wire x1="-3.81" y1="0" x2="-5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-2.54" x2="-6.35" y2="0" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="-2.54" x2="-5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-2.54" x2="-6.35" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="0" x2="-5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="0" x2="-6.35" y2="0" width="0.254" layer="94"/>
+<wire x1="-7.112" y1="-0.762" x2="-8.509" y2="-2.159" width="0.1524" layer="94"/>
+<wire x1="-6.985" y1="-1.905" x2="-8.382" y2="-3.302" width="0.1524" layer="94"/>
+<polygon width="0.1524" layer="94">
+<vertex x="-8.509" y="-2.159"/>
+<vertex x="-8.128" y="-1.27"/>
+<vertex x="-7.62" y="-1.778"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="-8.382" y="-3.302"/>
+<vertex x="-8.001" y="-2.413"/>
+<vertex x="-7.493" y="-2.921"/>
+</polygon>
+<wire x1="6.35" y1="0" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="3.81" y2="0" width="0.254" layer="94"/>
+<wire x1="6.35" y1="-2.54" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="3.81" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="6.35" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="5.08" y1="0" x2="3.81" y2="0" width="0.254" layer="94"/>
+<wire x1="3.048" y1="-0.762" x2="1.651" y2="-2.159" width="0.1524" layer="94"/>
+<wire x1="3.175" y1="-1.905" x2="1.778" y2="-3.302" width="0.1524" layer="94"/>
+<text x="8.636" y="-4.572" size="1.778" layer="95" rot="R90">&gt;NAME</text>
+<text x="10.795" y="-4.572" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<polygon width="0.1524" layer="94">
+<vertex x="1.651" y="-2.159"/>
+<vertex x="2.032" y="-1.27"/>
+<vertex x="2.54" y="-1.778"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="1.778" y="-3.302"/>
+<vertex x="2.159" y="-2.413"/>
+<vertex x="2.667" y="-2.921"/>
+</polygon>
+<pin name="RED_CATHODE" x="-5.08" y="-5.08" visible="off" length="short" rot="R90"/>
+<pin name="GREEN_CATHODE" x="0" y="-5.08" visible="off" length="short" rot="R90"/>
+<pin name="BLUE_CATHODE" x="5.08" y="-5.08" visible="off" length="short" rot="R90"/>
+<wire x1="-5.08" y1="0" x2="-5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="2.54" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="2.54" width="0.254" layer="94"/>
+<pin name="COMMON_ANODE" x="0" y="5.08" visible="off" length="short" rot="R270"/>
+<text x="-6.858" y="0.762" size="1.27" layer="94" ratio="9">R</text>
+<text x="-1.778" y="0.762" size="1.27" layer="94" ratio="9">G</text>
+<text x="3.302" y="0.762" size="1.27" layer="94" ratio="9">B</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -416,7 +503,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="LED-RGB" uservalue="yes">
+<deviceset name="LED-RGB" prefix="L" uservalue="yes">
 <description>&lt;h1&gt;RGB LED - 3 LEDS (red/green/blue) in one package&lt;/h1&gt;
                         &lt;p&gt;
                         The PLCC6 variant has the anodes on pins 1, 3 and 5 and the cathodes on 2,4 and 6 with the color
@@ -438,6 +525,25 @@
 <connect gate="GREEN" pin="CATHODE" pad="P$2"/>
 <connect gate="RED" pin="ANODE" pad="P$3"/>
 <connect gate="RED" pin="CATHODE" pad="P$4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LED-RGB-CA" prefix="L" uservalue="yes">
+<description>&lt;h1&gt;RGB LED with common anodes&lt;/h1&gt;</description>
+<gates>
+<gate name="G$1" symbol="RGB-LED-CA" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-5MM" package="LED_RGB_5MM">
+<connects>
+<connect gate="G$1" pin="BLUE_CATHODE" pad="BLUE"/>
+<connect gate="G$1" pin="COMMON_ANODE" pad="A/C"/>
+<connect gate="G$1" pin="GREEN_CATHODE" pad="GREEN"/>
+<connect gate="G$1" pin="RED_CATHODE" pad="RED"/>
 </connects>
 <technologies>
 <technology name=""/>
