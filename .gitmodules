@@ -1,0 +1,9 @@
+[submodule "EAGLE-Libraries/third-party/Adafruit-Eagle-Library"]
+	path = EAGLE-Libraries/third-party/Adafruit-Eagle-Library
+	url = git://github.com/adafruit/Adafruit-Eagle-Library.git
+[submodule "EAGLE-Libraries/third-party/Sparkfun-Eagle-Library"]
+	path = EAGLE-Libraries/third-party/Sparkfun-Eagle-Library
+	url = git://github.com/sparkfun/SparkFun-Eagle-Library.git
+[submodule "EAGLE-Libraries/third-party/Sparkfun-Eagle-Libraries"]
+	path = EAGLE-Libraries/third-party/Sparkfun-Eagle-Libraries
+	url = git://github.com/sparkfun/SparkFun-Eagle-Libraries.git
