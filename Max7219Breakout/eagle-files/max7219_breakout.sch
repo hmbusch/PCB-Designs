@@ -124,26 +124,6 @@
                 alt="Creative Commons License" style="border-width:0"
                 src="http://i.creativecommons.org/l/by-nc-sa/3.0/de/88x31.png" /&gt;&lt;/a&gt;&lt;/p&gt;</description>
 <packages>
-<package name="R1206">
-<description>&lt;strong&gt;Resistor, SMD package 1206&lt;/strong&gt;</description>
-<smd name="P$1" x="-1.65" y="0" dx="1.1" dy="1.7" layer="1"/>
-<smd name="P$2" x="1.65" y="0" dx="1.1" dy="1.7" layer="1"/>
-<wire x1="-2.3" y1="1" x2="2.4" y2="1" width="0.127" layer="39"/>
-<wire x1="2.4" y1="1" x2="2.4" y2="-1" width="0.127" layer="39"/>
-<wire x1="2.4" y1="-1" x2="-2.3" y2="-1" width="0.127" layer="39"/>
-<wire x1="-2.3" y1="-1" x2="-2.3" y2="1" width="0.127" layer="39"/>
-<wire x1="-0.9" y1="0.75" x2="0.9" y2="0.75" width="0.2032" layer="21"/>
-<wire x1="-0.9" y1="-0.75" x2="0.9" y2="-0.75" width="0.2032" layer="21"/>
-<text x="-2.3" y="1.2" size="1.016" layer="25" font="vector">&gt;NAME</text>
-<text x="-2.3" y="-2.2" size="1.016" layer="27" font="vector">&gt;VALUE</text>
-<wire x1="-1.575" y1="0.8" x2="1.575" y2="0.8" width="0.127" layer="51"/>
-<wire x1="1.575" y1="0.8" x2="1.575" y2="-0.8" width="0.127" layer="51"/>
-<wire x1="-1.575" y1="0.8" x2="-1.575" y2="-0.8" width="0.127" layer="51"/>
-<wire x1="-1.575" y1="-0.8" x2="1.575" y2="-0.8" width="0.127" layer="51"/>
-<rectangle x1="-1.6" y1="-0.8" x2="-0.7" y2="0.8" layer="51"/>
-<rectangle x1="0.7" y1="-0.8" x2="1.6" y2="0.8" layer="51"/>
-<rectangle x1="-0.4" y1="-0.8" x2="0.4" y2="0.8" layer="35"/>
-</package>
 <package name="RESISTOR-1/4W-AXIAL">
 <description>&lt;strong&gt;Resistor, 1/4W, axial&lt;/strong&gt;
 
@@ -176,7 +156,54 @@
 <pad name="A" x="1.25" y="0" drill="0.8" diameter="1.6" rot="R180"/>
 <text x="0.75" y="1.25" size="1.27" layer="51" align="center-left">+</text>
 <circle x="0" y="0" radius="2.5" width="0.2032" layer="21"/>
-<text x="0.75" y="1.25" size="1.27" layer="21" ratio="10" align="center-left">+</text>
+<text x="0.75" y="1.45" size="1.27" layer="21" ratio="10" align="center-left">+</text>
+</package>
+<package name="CERAMIC_CAP_5MM">
+<description>&lt;h1&gt;Cermamic capacitor, 5mm pitch, body size up to 7x2.5mm&lt;/h1&gt;</description>
+<wire x1="-3.6" y1="-1.25" x2="3.6" y2="-1.25" width="0.2032" layer="21"/>
+<wire x1="3.6" y1="-1.25" x2="3.6" y2="1.25" width="0.2032" layer="21"/>
+<wire x1="3.6" y1="1.25" x2="-3.6" y2="1.25" width="0.2032" layer="21"/>
+<wire x1="-3.6" y1="1.25" x2="-3.6" y2="-1.25" width="0.2032" layer="21"/>
+<wire x1="3.6" y1="1.25" x2="-3.6" y2="1.25" width="0.127" layer="51"/>
+<wire x1="3.6" y1="-1.25" x2="3.6" y2="1.25" width="0.127" layer="51"/>
+<wire x1="-3.6" y1="-1.25" x2="3.6" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="-3.6" y1="1.25" x2="-3.6" y2="-1.25" width="0.127" layer="51"/>
+<pad name="P$1" x="-2.5" y="0" drill="0.8" diameter="1.6"/>
+<pad name="P$2" x="2.5" y="0" drill="0.8" diameter="1.6"/>
+<wire x1="-0.5" y1="0.5" x2="-0.5" y2="0" width="0.127" layer="51"/>
+<wire x1="-0.5" y1="0" x2="-0.5" y2="-0.5" width="0.127" layer="51"/>
+<wire x1="-0.5" y1="0" x2="-1.5" y2="0" width="0.127" layer="51"/>
+<wire x1="0.5" y1="0.5" x2="0.5" y2="0" width="0.127" layer="51"/>
+<wire x1="0.5" y1="-0.5" x2="0.5" y2="0" width="0.127" layer="51"/>
+<wire x1="0.5" y1="0" x2="1.5" y2="0" width="0.127" layer="51"/>
+<wire x1="-1.4" y1="0" x2="-0.5" y2="0" width="0.2032" layer="21"/>
+<wire x1="-0.5" y1="0.5" x2="-0.5" y2="0" width="0.2032" layer="21"/>
+<wire x1="-0.5" y1="0" x2="-0.5" y2="-0.5" width="0.2032" layer="21"/>
+<wire x1="0.5" y1="0.5" x2="0.5" y2="0" width="0.2032" layer="21"/>
+<wire x1="0.5" y1="0" x2="0.5" y2="-0.5" width="0.2032" layer="21"/>
+<wire x1="0.5" y1="0" x2="1.4" y2="0" width="0.2032" layer="21"/>
+<text x="-3.5" y="1.5" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.5" y="-1.5" size="1.27" layer="27" align="top-left">&gt;VALUE</text>
+</package>
+<package name="R1206">
+<description>&lt;strong&gt;Resistor, SMD package 1206&lt;/strong&gt;</description>
+<smd name="P$1" x="-1.65" y="0" dx="1.1" dy="1.7" layer="1"/>
+<smd name="P$2" x="1.65" y="0" dx="1.1" dy="1.7" layer="1"/>
+<wire x1="-2.3" y1="1" x2="2.4" y2="1" width="0.127" layer="39"/>
+<wire x1="2.4" y1="1" x2="2.4" y2="-1" width="0.127" layer="39"/>
+<wire x1="2.4" y1="-1" x2="-2.3" y2="-1" width="0.127" layer="39"/>
+<wire x1="-2.3" y1="-1" x2="-2.3" y2="1" width="0.127" layer="39"/>
+<wire x1="-0.8" y1="0.75" x2="0.8" y2="0.75" width="0.2032" layer="21"/>
+<wire x1="-0.8" y1="-0.75" x2="0.8" y2="-0.75" width="0.2032" layer="21"/>
+<text x="-2.3" y="1.2" size="1.016" layer="25" font="vector">&gt;NAME</text>
+<text x="-2.3" y="-2.2" size="1.016" layer="27" font="vector">&gt;VALUE</text>
+<wire x1="-1.575" y1="0.8" x2="1.575" y2="0.8" width="0.127" layer="51"/>
+<wire x1="1.575" y1="0.8" x2="1.575" y2="-0.8" width="0.127" layer="51"/>
+<wire x1="-1.575" y1="0.8" x2="-1.575" y2="-0.8" width="0.127" layer="51"/>
+<wire x1="-1.575" y1="-0.8" x2="1.575" y2="-0.8" width="0.127" layer="51"/>
+<rectangle x1="-1.6" y1="-0.8" x2="-0.7" y2="0.8" layer="51"/>
+<rectangle x1="0.7" y1="-0.8" x2="1.6" y2="0.8" layer="51"/>
+<rectangle x1="-0.4" y1="-0.8" x2="0.4" y2="0.8" layer="35"/>
 </package>
 <package name="MKS2-2.5">
 <description>&lt;h1&gt;WIMA MKS-2 package, 7.2x2.5mm, grid 5mm&lt;/h1&gt;
@@ -206,11 +233,12 @@ Package information taken from &lt;a href="http://www.wima.com/EN/WIMA_MKS_2.pdf
 <wire x1="0.5" y1="0.5" x2="0.5" y2="0" width="0.127" layer="51"/>
 <wire x1="0.5" y1="-0.5" x2="0.5" y2="0" width="0.127" layer="51"/>
 <wire x1="0.5" y1="0" x2="1.5" y2="0" width="0.127" layer="51"/>
-<wire x1="-1.5" y1="0" x2="-0.5" y2="0" width="0.2032" layer="21"/>
-<wire x1="-0.5" y1="0.5" x2="-0.5" y2="-0.5" width="0.2032" layer="21"/>
+<wire x1="-1.4" y1="0" x2="-0.5" y2="0" width="0.2032" layer="21"/>
+<wire x1="-0.5" y1="0.5" x2="-0.5" y2="0" width="0.2032" layer="21"/>
+<wire x1="-0.5" y1="0" x2="-0.5" y2="-0.5" width="0.2032" layer="21"/>
 <wire x1="0.5" y1="0.5" x2="0.5" y2="0" width="0.2032" layer="21"/>
 <wire x1="0.5" y1="0" x2="0.5" y2="-0.5" width="0.2032" layer="21"/>
-<wire x1="0.5" y1="0" x2="1.5" y2="0" width="0.2032" layer="21"/>
+<wire x1="0.5" y1="0" x2="1.4" y2="0" width="0.2032" layer="21"/>
 <text x="-3.5" y="1.5" size="1.27" layer="25">&gt;NAME</text>
 <text x="-3.5" y="-1.5" size="1.27" layer="27" align="top-left">&gt;VALUE</text>
 </package>
@@ -242,11 +270,12 @@ Package information taken from &lt;a href="http://www.wima.com/EN/WIMA_MKS_2.pdf
 <wire x1="0.5" y1="0.5" x2="0.5" y2="0" width="0.127" layer="51"/>
 <wire x1="0.5" y1="-0.5" x2="0.5" y2="0" width="0.127" layer="51"/>
 <wire x1="0.5" y1="0" x2="1.5" y2="0" width="0.127" layer="51"/>
-<wire x1="-1.5" y1="0" x2="-0.5" y2="0" width="0.2032" layer="21"/>
-<wire x1="-0.5" y1="0.5" x2="-0.5" y2="-0.5" width="0.2032" layer="21"/>
+<wire x1="-1.4" y1="0" x2="-0.5" y2="0" width="0.2032" layer="21"/>
+<wire x1="-0.5" y1="0.5" x2="-0.5" y2="0" width="0.2032" layer="21"/>
+<wire x1="-0.5" y1="0" x2="-0.5" y2="-0.5" width="0.2032" layer="21"/>
 <wire x1="0.5" y1="0.5" x2="0.5" y2="0" width="0.2032" layer="21"/>
 <wire x1="0.5" y1="0" x2="0.5" y2="-0.5" width="0.2032" layer="21"/>
-<wire x1="0.5" y1="0" x2="1.5" y2="0" width="0.2032" layer="21"/>
+<wire x1="0.5" y1="0" x2="1.4" y2="0" width="0.2032" layer="21"/>
 <text x="-3.5" y="2" size="1.27" layer="25">&gt;NAME</text>
 <text x="-3.5" y="-2" size="1.27" layer="27" align="top-left">&gt;VALUE</text>
 </package>
@@ -278,39 +307,14 @@ Package information taken from &lt;a href="http://www.wima.com/EN/WIMA_MKS_2.pdf
 <wire x1="0.5" y1="0.5" x2="0.5" y2="0" width="0.127" layer="51"/>
 <wire x1="0.5" y1="-0.5" x2="0.5" y2="0" width="0.127" layer="51"/>
 <wire x1="0.5" y1="0" x2="1.5" y2="0" width="0.127" layer="51"/>
-<wire x1="-1.5" y1="0" x2="-0.5" y2="0" width="0.2032" layer="21"/>
-<wire x1="-0.5" y1="0.5" x2="-0.5" y2="-0.5" width="0.2032" layer="21"/>
+<wire x1="-1.4" y1="0" x2="-0.5" y2="0" width="0.2032" layer="21"/>
+<wire x1="-0.5" y1="0.5" x2="-0.5" y2="0" width="0.2032" layer="21"/>
+<wire x1="-0.5" y1="0" x2="-0.5" y2="-0.5" width="0.2032" layer="21"/>
 <wire x1="0.5" y1="0.5" x2="0.5" y2="0" width="0.2032" layer="21"/>
 <wire x1="0.5" y1="0" x2="0.5" y2="-0.5" width="0.2032" layer="21"/>
-<wire x1="0.5" y1="0" x2="1.5" y2="0" width="0.2032" layer="21"/>
+<wire x1="0.5" y1="0" x2="1.4" y2="0" width="0.2032" layer="21"/>
 <text x="-3.5" y="3" size="1.27" layer="25">&gt;NAME</text>
 <text x="-3.5" y="-3" size="1.27" layer="27" align="top-left">&gt;VALUE</text>
-</package>
-<package name="CERAMIC_CAP_5MM">
-<description>&lt;h1&gt;Cermamic capacitor, 5mm pitch, body size up to 7x2.5mm&lt;/h1&gt;</description>
-<wire x1="-3.6" y1="-1.25" x2="3.6" y2="-1.25" width="0.2032" layer="21"/>
-<wire x1="3.6" y1="-1.25" x2="3.6" y2="1.25" width="0.2032" layer="21"/>
-<wire x1="3.6" y1="1.25" x2="-3.6" y2="1.25" width="0.2032" layer="21"/>
-<wire x1="-3.6" y1="1.25" x2="-3.6" y2="-1.25" width="0.2032" layer="21"/>
-<wire x1="3.6" y1="1.25" x2="-3.6" y2="1.25" width="0.127" layer="51"/>
-<wire x1="3.6" y1="-1.25" x2="3.6" y2="1.25" width="0.127" layer="51"/>
-<wire x1="-3.6" y1="-1.25" x2="3.6" y2="-1.25" width="0.127" layer="51"/>
-<wire x1="-3.6" y1="1.25" x2="-3.6" y2="-1.25" width="0.127" layer="51"/>
-<pad name="P$1" x="-2.5" y="0" drill="0.8" diameter="1.6"/>
-<pad name="P$2" x="2.5" y="0" drill="0.8" diameter="1.6"/>
-<wire x1="-0.5" y1="0.5" x2="-0.5" y2="0" width="0.127" layer="51"/>
-<wire x1="-0.5" y1="0" x2="-0.5" y2="-0.5" width="0.127" layer="51"/>
-<wire x1="-0.5" y1="0" x2="-1.5" y2="0" width="0.127" layer="51"/>
-<wire x1="0.5" y1="0.5" x2="0.5" y2="0" width="0.127" layer="51"/>
-<wire x1="0.5" y1="-0.5" x2="0.5" y2="0" width="0.127" layer="51"/>
-<wire x1="0.5" y1="0" x2="1.5" y2="0" width="0.127" layer="51"/>
-<wire x1="-1.5" y1="0" x2="-0.5" y2="0" width="0.2032" layer="21"/>
-<wire x1="-0.5" y1="0.5" x2="-0.5" y2="-0.5" width="0.2032" layer="21"/>
-<wire x1="0.5" y1="0.5" x2="0.5" y2="0" width="0.2032" layer="21"/>
-<wire x1="0.5" y1="0" x2="0.5" y2="-0.5" width="0.2032" layer="21"/>
-<wire x1="0.5" y1="0" x2="1.5" y2="0" width="0.2032" layer="21"/>
-<text x="-3.5" y="1.5" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3.5" y="-1.5" size="1.27" layer="27" align="top-left">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -1016,44 +1020,44 @@ Package information taken from &lt;a href="http://www.wima.com/EN/WIMA_MKS_2.pdf
 <packages>
 <package name="DIP-24">
 <description>&lt;h1&gt;DIP-24&lt;/h1&gt;</description>
-<pad name="24" x="-11.43" y="5.08" drill="0.8" shape="long" rot="R90"/>
-<pad name="23" x="-8.89" y="5.08" drill="0.8" shape="long" rot="R90"/>
-<pad name="22" x="-6.35" y="5.08" drill="0.8" shape="long" rot="R90"/>
-<pad name="21" x="-3.81" y="5.08" drill="0.8" shape="long" rot="R90"/>
-<pad name="20" x="-1.27" y="5.08" drill="0.8" shape="long" rot="R90"/>
-<pad name="19" x="1.27" y="5.08" drill="0.8" shape="long" rot="R90"/>
-<pad name="18" x="3.81" y="5.08" drill="0.8" shape="long" rot="R90"/>
-<pad name="17" x="6.35" y="5.08" drill="0.8" shape="long" rot="R90"/>
-<pad name="1" x="-11.43" y="-5.08" drill="0.8" shape="long" rot="R90"/>
-<pad name="2" x="-8.89" y="-5.08" drill="0.8" shape="long" rot="R90"/>
-<pad name="3" x="-6.35" y="-5.08" drill="0.8" shape="long" rot="R90"/>
-<pad name="4" x="-3.81" y="-5.08" drill="0.8" shape="long" rot="R90"/>
-<pad name="5" x="-1.27" y="-5.08" drill="0.8" shape="long" rot="R90"/>
-<pad name="6" x="1.27" y="-5.08" drill="0.8" shape="long" rot="R90"/>
-<pad name="7" x="3.81" y="-5.08" drill="0.8" shape="long" rot="R90"/>
-<pad name="8" x="6.35" y="-5.08" drill="0.8" shape="long" rot="R90"/>
-<wire x1="-12.81" y1="3.365" x2="17.81" y2="3.365" width="0.3048" layer="21"/>
-<wire x1="17.81" y1="3.365" x2="17.81" y2="-3.45" width="0.3048" layer="21"/>
-<wire x1="17.81" y1="-3.45" x2="-12.81" y2="-3.45" width="0.3048" layer="21"/>
-<wire x1="-12.81" y1="-3.45" x2="-12.81" y2="-1" width="0.3048" layer="21"/>
-<wire x1="-12.81" y1="1" x2="-12.81" y2="3.365" width="0.3048" layer="21"/>
-<wire x1="-12.81" y1="1" x2="-12.81" y2="-1" width="0.3048" layer="21" curve="-180"/>
-<text x="-10.16" y="1.27" size="1.27" layer="25" rot="R180" align="center-right">&gt;NAME</text>
-<text x="-10.16" y="-1.27" size="1.27" layer="27" align="center-left">&gt;VALUE</text>
-<wire x1="-12.81" y1="3.375" x2="17.81" y2="3.375" width="0.127" layer="51"/>
-<wire x1="17.81" y1="3.375" x2="17.81" y2="-3.45" width="0.127" layer="51"/>
-<wire x1="17.81" y1="-3.45" x2="-12.81" y2="-3.45" width="0.127" layer="51"/>
-<wire x1="-12.81" y1="-3.45" x2="-12.81" y2="-1" width="0.127" layer="51"/>
-<wire x1="-12.81" y1="1" x2="-12.81" y2="3.375" width="0.127" layer="51"/>
-<wire x1="-12.81" y1="1" x2="-12.81" y2="-1" width="0.127" layer="51" curve="-180"/>
-<pad name="16" x="8.89" y="5.08" drill="0.8" shape="long" rot="R90"/>
-<pad name="9" x="8.89" y="-5.08" drill="0.8" shape="long" rot="R90"/>
-<pad name="15" x="11.43" y="5.08" drill="0.8" shape="long" rot="R90"/>
-<pad name="14" x="13.97" y="5.08" drill="0.8" shape="long" rot="R90"/>
-<pad name="13" x="16.51" y="5.08" drill="0.8" shape="long" rot="R90"/>
-<pad name="10" x="11.43" y="-5.08" drill="0.8" shape="long" rot="R90"/>
-<pad name="11" x="13.97" y="-5.08" drill="0.8" shape="long" rot="R90"/>
-<pad name="12" x="16.51" y="-5.08" drill="0.8" shape="long" rot="R90"/>
+<pad name="24" x="-13.97" y="3.81" drill="0.8" shape="long" rot="R90"/>
+<pad name="23" x="-11.43" y="3.81" drill="0.8" shape="long" rot="R90"/>
+<pad name="22" x="-8.89" y="3.81" drill="0.8" shape="long" rot="R90"/>
+<pad name="21" x="-6.35" y="3.81" drill="0.8" shape="long" rot="R90"/>
+<pad name="20" x="-3.81" y="3.81" drill="0.8" shape="long" rot="R90"/>
+<pad name="19" x="-1.27" y="3.81" drill="0.8" shape="long" rot="R90"/>
+<pad name="18" x="1.27" y="3.81" drill="0.8" shape="long" rot="R90"/>
+<pad name="17" x="3.81" y="3.81" drill="0.8" shape="long" rot="R90"/>
+<pad name="1" x="-13.97" y="-3.81" drill="0.8" shape="long" rot="R90"/>
+<pad name="2" x="-11.43" y="-3.81" drill="0.8" shape="long" rot="R90"/>
+<pad name="3" x="-8.89" y="-3.81" drill="0.8" shape="long" rot="R90"/>
+<pad name="4" x="-6.35" y="-3.81" drill="0.8" shape="long" rot="R90"/>
+<pad name="5" x="-3.81" y="-3.81" drill="0.8" shape="long" rot="R90"/>
+<pad name="6" x="-1.27" y="-3.81" drill="0.8" shape="long" rot="R90"/>
+<pad name="7" x="1.27" y="-3.81" drill="0.8" shape="long" rot="R90"/>
+<pad name="8" x="3.81" y="-3.81" drill="0.8" shape="long" rot="R90"/>
+<wire x1="-15.35" y1="2.095" x2="15.27" y2="2.095" width="0.3048" layer="21"/>
+<wire x1="15.27" y1="2.095" x2="15.27" y2="-2.18" width="0.3048" layer="21"/>
+<wire x1="15.27" y1="-2.18" x2="-15.35" y2="-2.18" width="0.3048" layer="21"/>
+<wire x1="-15.35" y1="-2.18" x2="-15.35" y2="-1" width="0.3048" layer="21"/>
+<wire x1="-15.35" y1="1" x2="-15.35" y2="2.095" width="0.3048" layer="21"/>
+<wire x1="-15.35" y1="1" x2="-15.35" y2="-1" width="0.3048" layer="21" curve="-180"/>
+<text x="-12.7" y="1.27" size="1.27" layer="25" rot="R180" align="center-right">&gt;NAME</text>
+<text x="-12.7" y="-1.27" size="1.27" layer="27" align="center-left">&gt;VALUE</text>
+<wire x1="-15.35" y1="3.375" x2="15.27" y2="3.375" width="0.127" layer="51"/>
+<wire x1="15.27" y1="3.375" x2="15.27" y2="-3.45" width="0.127" layer="51"/>
+<wire x1="15.27" y1="-3.45" x2="-15.35" y2="-3.45" width="0.127" layer="51"/>
+<wire x1="-15.35" y1="-3.45" x2="-15.35" y2="-1" width="0.127" layer="51"/>
+<wire x1="-15.35" y1="1" x2="-15.35" y2="3.375" width="0.127" layer="51"/>
+<wire x1="-15.35" y1="1" x2="-15.35" y2="-1" width="0.127" layer="51" curve="-180"/>
+<pad name="16" x="6.35" y="3.81" drill="0.8" shape="long" rot="R90"/>
+<pad name="9" x="6.35" y="-3.81" drill="0.8" shape="long" rot="R90"/>
+<pad name="15" x="8.89" y="3.81" drill="0.8" shape="long" rot="R90"/>
+<pad name="14" x="11.43" y="3.81" drill="0.8" shape="long" rot="R90"/>
+<pad name="13" x="13.97" y="3.81" drill="0.8" shape="long" rot="R90"/>
+<pad name="10" x="8.89" y="-3.81" drill="0.8" shape="long" rot="R90"/>
+<pad name="11" x="11.43" y="-3.81" drill="0.8" shape="long" rot="R90"/>
+<pad name="12" x="13.97" y="-3.81" drill="0.8" shape="long" rot="R90"/>
 </package>
 </packages>
 <symbols>
@@ -1187,7 +1191,7 @@ Package information taken from &lt;a href="http://www.wima.com/EN/WIMA_MKS_2.pdf
 <wire x1="-106.68" y1="-43.18" x2="-106.68" y2="-50.8" width="0.6096" layer="94"/>
 <wire x1="-106.68" y1="-50.8" x2="50.8" y2="-50.8" width="0.6096" layer="94"/>
 <wire x1="50.8" y1="-50.8" x2="50.8" y2="-43.18" width="0.6096" layer="94"/>
-<text x="48.26" y="-48.26" size="2.54" layer="94" ratio="10" align="bottom-right">Hendrik Busch / https://githubs.com/hmbusch</text>
+<text x="48.26" y="-48.26" size="2.54" layer="94" ratio="10" align="bottom-right">Hendrik Busch / https://github.com/hmbusch</text>
 </plain>
 <instances>
 <instance part="P+1" gate="1" x="-71.12" y="45.72"/>
