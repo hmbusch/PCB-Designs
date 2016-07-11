@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -53,6 +53,7 @@
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="200" name="200bmp" color="1" fill="10" visible="yes" active="yes"/>
 </layers>
 <library>
 <description>&lt;h1&gt;ICMI Custom Parts&lt;/h1&gt;
@@ -354,6 +355,60 @@ modules that use the 16-pin/pad 16x16mm S2 SMD package.&lt;/p&gt;</description>
 <wire x1="-2.032" y1="-1.524" x2="2.032" y2="-1.524" width="0.127" layer="51"/>
 <wire x1="2.032" y1="-1.524" x2="2.54" y2="0" width="0.127" layer="51"/>
 </package>
+<package name="LIPO-BMS-CHARGER">
+<description>&lt;strong&gt;LIPO BMS/charger for single cells&lt;/strong&gt;
+&lt;p&gt;This is the symbol for a combined LiPo charger / protection circuit, usually found on ebay. These modules use a TP4056 for charging and a DW01 for cell protection. Please note that &lt;code&gt;IN-&lt;/code&gt; and &lt;code&gt;OUT-&lt;/code&gt; are connected to each other, whereas all other pins are are seperate.&lt;/p&gt;
+&lt;p&gt;The module also features a Micro-USB connector, not represented in the package here.&lt;/p&gt;</description>
+<wire x1="17.2" y1="0" x2="17.2" y2="27.5" width="0.254" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="27.5" width="0.254" layer="21"/>
+<wire x1="0" y1="27.5" x2="4.6" y2="27.5" width="0.254" layer="21"/>
+<wire x1="4.6" y1="27.5" x2="12.6" y2="27.5" width="0.254" layer="21"/>
+<wire x1="12.6" y1="27.5" x2="17.2" y2="27.5" width="0.254" layer="21"/>
+<wire x1="4.6" y1="27.5" x2="4.6" y2="28.7" width="0.254" layer="21"/>
+<wire x1="4.6" y1="28.7" x2="12.6" y2="28.7" width="0.254" layer="21"/>
+<wire x1="12.6" y1="28.7" x2="12.6" y2="27.5" width="0.254" layer="21"/>
+<wire x1="0" y1="0" x2="2.2" y2="0" width="0.254" layer="21"/>
+<wire x1="2.2" y1="0" x2="2.2" y2="0.75" width="0.254" layer="21"/>
+<wire x1="2.95" y1="1.5" x2="14.25" y2="1.5" width="0.254" layer="21"/>
+<wire x1="15" y1="0.75" x2="15" y2="0" width="0.254" layer="21"/>
+<wire x1="15" y1="0" x2="17.2" y2="0" width="0.254" layer="21"/>
+<wire x1="2.2" y1="0.75" x2="2.95" y2="1.5" width="0.254" layer="21" curve="-90"/>
+<wire x1="14.25" y1="1.5" x2="15" y2="0.75" width="0.254" layer="21" curve="-90"/>
+<wire x1="17.2" y1="0" x2="17.2" y2="27.5" width="0.254" layer="51"/>
+<wire x1="0" y1="0" x2="0" y2="27.5" width="0.254" layer="51"/>
+<wire x1="0" y1="27.5" x2="4.6" y2="27.5" width="0.254" layer="51"/>
+<wire x1="4.6" y1="27.5" x2="12.6" y2="27.5" width="0.254" layer="51"/>
+<wire x1="12.6" y1="27.5" x2="17.2" y2="27.5" width="0.254" layer="51"/>
+<wire x1="4.6" y1="27.5" x2="4.6" y2="28.7" width="0.254" layer="51"/>
+<wire x1="4.6" y1="28.7" x2="12.6" y2="28.7" width="0.254" layer="51"/>
+<wire x1="12.6" y1="28.7" x2="12.6" y2="27.5" width="0.254" layer="51"/>
+<wire x1="0" y1="0" x2="2.2" y2="0" width="0.254" layer="51"/>
+<wire x1="2.2" y1="0" x2="2.2" y2="0.75" width="0.254" layer="51"/>
+<wire x1="2.95" y1="1.5" x2="14.25" y2="1.5" width="0.254" layer="51"/>
+<wire x1="15" y1="0.75" x2="15" y2="0" width="0.254" layer="51"/>
+<wire x1="15" y1="0" x2="17.2" y2="0" width="0.254" layer="51"/>
+<wire x1="2.2" y1="0.75" x2="2.95" y2="1.5" width="0.254" layer="51" curve="-90"/>
+<wire x1="14.25" y1="1.5" x2="15" y2="0.75" width="0.254" layer="51" curve="-90"/>
+<pad name="IN-" x="1.57" y="26.23" drill="0.8" diameter="1.6764" shape="square"/>
+<pad name="IN+" x="15.63" y="26.23" drill="0.8" diameter="1.6764"/>
+<pad name="OUT-" x="1.72" y="3.3" drill="0.8" diameter="1.6764" shape="square"/>
+<pad name="OUT+" x="15.63" y="3.3" drill="0.8" diameter="1.6764"/>
+<pad name="BAT+" x="12.43" y="3.3" drill="0.8" diameter="1.6764"/>
+<pad name="BAT-" x="5.02" y="3.3" drill="0.8" diameter="1.6764" shape="square"/>
+<text x="8.6" y="25.4" size="1.27" layer="21" font="vector" ratio="10" align="bottom-center">USB</text>
+<text x="1.57" y="21.59" size="1.27" layer="51" font="vector" rot="R90" align="center-left">IN-</text>
+<text x="15.63" y="21.59" size="1.27" layer="51" font="vector" rot="R90" align="center-left">IN+</text>
+<text x="1.57" y="21.59" size="1.27" layer="21" font="vector" ratio="10" rot="R90" align="center-left">IN-</text>
+<text x="15.63" y="21.59" size="1.27" layer="21" font="vector" ratio="10" rot="R90" align="center-left">IN+</text>
+<text x="1.62" y="5.08" size="1.27" layer="21" font="vector" ratio="10" rot="R270" align="center-right">OUT-</text>
+<text x="5.02" y="5.08" size="1.27" layer="21" font="vector" ratio="10" rot="R270" align="center-right">BAT-</text>
+<text x="12.43" y="5.08" size="1.27" layer="21" font="vector" ratio="10" rot="R270" align="center-right">BAT+</text>
+<text x="15.63" y="5.08" size="1.27" layer="21" font="vector" ratio="10" rot="R270" align="center-right">OUT+</text>
+<text x="1.72" y="5.08" size="1.27" layer="51" font="vector" rot="R270" align="center-right">OUT-</text>
+<text x="5.02" y="5.08" size="1.27" layer="51" font="vector" rot="R270" align="center-right">BAT-</text>
+<text x="12.43" y="5.08" size="1.27" layer="51" font="vector" rot="R270" align="center-right">BAT+</text>
+<text x="15.63" y="5.08" size="1.27" layer="51" font="vector" rot="R270" align="center-right">OUT+</text>
+</package>
 </packages>
 <symbols>
 <symbol name="MRBS2">
@@ -586,6 +641,25 @@ of RFM69HCW modules, and enhance the application skills.&lt;/p&gt;</description>
 <text x="2.032" y="7.62" size="1.27" layer="95" rot="R90">V+</text>
 <text x="7.112" y="7.62" size="1.27" layer="95" rot="R90">VBAT</text>
 </symbol>
+<symbol name="LIPO-BMS-CHARGER">
+<description>&lt;strong&gt;LIPO BMS/charger for single cells&lt;/strong&gt;
+&lt;p&gt;This is the symbol for a combined LiPo charger / protection circuit, usually found on ebay. These modules use a TP4056 for charging and a DW01 for cell protection. Please note that &lt;code&gt;IN-&lt;/code&gt; and &lt;code&gt;OUT-&lt;/code&gt; are connected to each other, whereas all other pins are are seperate.&lt;/p&gt;</description>
+<pin name="IN+" x="-17.78" y="5.08" visible="pin" length="middle" direction="pwr"/>
+<pin name="IN-" x="-17.78" y="-2.54" visible="pin" length="middle" direction="pwr"/>
+<pin name="OUT+" x="17.78" y="5.08" visible="pin" length="middle" direction="pwr" rot="R180"/>
+<pin name="OUT-" x="17.78" y="-2.54" visible="pin" length="middle" direction="pwr" rot="R180"/>
+<pin name="BAT+" x="-2.54" y="-12.7" visible="pin" length="middle" direction="pwr" rot="R90"/>
+<pin name="BAT-" x="2.54" y="-12.7" visible="pin" length="middle" direction="pwr" rot="R90"/>
+<wire x1="-15.24" y1="10.16" x2="-15.24" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-10.16" x2="15.24" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-10.16" x2="15.24" y2="10.16" width="0.254" layer="94"/>
+<wire x1="15.24" y1="10.16" x2="-15.24" y2="10.16" width="0.254" layer="94"/>
+<text x="0" y="5.08" size="5.08" layer="94" font="vector" ratio="12" align="center">=&gt;</text>
+<wire x1="-12.7" y1="-2.54" x2="-12.7" y2="1.27" width="0.127" layer="94"/>
+<wire x1="-12.7" y1="1.27" x2="12.7" y2="1.27" width="0.127" layer="94"/>
+<wire x1="12.7" y1="1.27" x2="12.7" y2="-2.54" width="0.127" layer="94"/>
+<text x="-15.24" y="12.7" size="1.6764" layer="95" font="vector" align="top-left">&gt;NAME</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="MRBS-20003">
@@ -806,6 +880,29 @@ This is the device for the ESP8266 breakout board from Adafruit, called the Huzz
 <connect gate="_SUPPLY" pin="V+" pad="V+"/>
 <connect gate="_SUPPLY" pin="VBAT" pad="VBAT"/>
 <connect gate="_SUPPLY" pin="VCC" pad="VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LIPO-BMS-CHARGER">
+<description>&lt;strong&gt;LIPO BMS/charger for single cells&lt;/strong&gt;
+&lt;p&gt;This is the symbol for a combined LiPo charger / protection circuit, usually found on ebay. These modules use a TP4056 for charging and a DW01 for cell protection. Please note that &lt;code&gt;IN-&lt;/code&gt; and &lt;code&gt;OUT-&lt;/code&gt; are connected to each other, whereas all other pins are are seperate.&lt;/p&gt;
+&lt;p&gt;The module also features a Micro-USB connector, not represented in the package here.&lt;/p&gt;</description>
+<gates>
+<gate name="LIPO-BMS" symbol="LIPO-BMS-CHARGER" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-MODULE" package="LIPO-BMS-CHARGER">
+<connects>
+<connect gate="LIPO-BMS" pin="BAT+" pad="BAT+"/>
+<connect gate="LIPO-BMS" pin="BAT-" pad="BAT-"/>
+<connect gate="LIPO-BMS" pin="IN+" pad="IN+"/>
+<connect gate="LIPO-BMS" pin="IN-" pad="IN-"/>
+<connect gate="LIPO-BMS" pin="OUT+" pad="OUT+"/>
+<connect gate="LIPO-BMS" pin="OUT-" pad="OUT-"/>
 </connects>
 <technologies>
 <technology name=""/>
