@@ -405,7 +405,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "home_assistant_remote.kicad_pro",
+    "filename": "wemos-d1-mini-mainboard.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -533,6 +533,6 @@
     ]
   ],
   "text_variables": {
-    "revision": "v1.0"
+    "revision": "v1.1"
   }
 }
