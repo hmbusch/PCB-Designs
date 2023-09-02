@@ -458,18 +458,6 @@
       {
         "netclass": "Power",
         "pattern": "/BAT*"
-      },
-      {
-        "netclass": "Power",
-        "pattern": "/V*"
-      },
-      {
-        "netclass": "Power",
-        "pattern": "*3.3*"
-      },
-      {
-        "netclass": "Power",
-        "pattern": "/OUT*"
       }
     ]
   },
@@ -533,6 +521,6 @@
     ]
   ],
   "text_variables": {
-    "revision": "v1.1"
+    "revision": "v1.2"
   }
 }
