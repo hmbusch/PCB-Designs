@@ -1,3 +1,4 @@
 *.bak
 .sync
 fp-info-cache
+*-backups
