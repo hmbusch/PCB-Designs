@@ -24,6 +24,20 @@ from Pololu, as I have a couple of them lying around. They are quite
 expensive these days, I know that and wouldn't use them if I didn't 
 already have them.
 
+### Reverse Engineered Watch Winder Circuit
+
+I purchased a cheap automatic watch winder from AliExpress and had some
+issues the the electronics inside. I reverse engineered the PCB and ended
+up replacing the motor IC with a good one. The schematic of the reverse
+engineered PCB is contained here.
+
+### KiCad symbols, footprints & 3D Models
+
+While I do not subscribe to the notion that you should model every KiCad
+component that I use from scratch, I had design several components that
+simply were not available anywhere else or not in a quality or "flavor"
+I liked.
+
 ### Old Stuff
 
 I designed these schematics about 10 years ago. They are provided "as is",
