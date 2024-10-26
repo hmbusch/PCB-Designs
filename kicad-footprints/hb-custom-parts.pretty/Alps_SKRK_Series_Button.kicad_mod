@@ -5,7 +5,7 @@
 	(layer "F.Cu")
 	(descr "Alps 3.9×2.9mm Compact Type (Surface Mount) SKRK Series Button")
 	(property "Reference" "REF**"
-		(at 0 0 0)
+		(at 0 -2.1 0)
 		(unlocked yes)
 		(layer "F.SilkS")
 		(uuid "363e31f0-6269-483e-9b65-01f2cfd305a9")
@@ -154,5 +154,16 @@
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(thermal_bridge_angle 45)
 		(uuid "a7b9e424-b0fc-4011-b7f3-166e2e31964a")
+	)
+	(model "../kicad-3dmodels/alps-skrk-series-smd-push-button.step"
+		(offset
+			(xyz 1.9 1.5 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
 	)
 )
