@@ -1,0 +1,169 @@
+(footprint "Alps_SKRK_Series_Button"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "Alps 3.9×2.9mm Compact Type (Surface Mount) SKRK Series Button")
+	(property "Reference" "REF**"
+		(at 0 -2.1 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "363e31f0-6269-483e-9b65-01f2cfd305a9")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "Alps_SKRK_Series_Button"
+		(at 0 -7.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "62286408-dee1-4359-a504-3874465054be")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "83b3ccc0-9fc0-40d6-9c98-4e4be28ea3d5")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://tech.alpsalpine.com/e/products/detail/SKRKAHE020/"
+		(at 0 -2.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "625e2edf-584c-45f0-8f99-3b7f7eadce94")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Alps 3.9×2.9mm Compact Type (Surface Mount) SKRK Series Button"
+		(at 0 -5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "577e5d3f-6be5-43a1-9af6-32118b0f0724")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -1.6 -1)
+		(end 1.4 -1)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "00247e15-bdcc-4631-9050-4d067e816bc0")
+	)
+	(fp_line
+		(start -1.6 1)
+		(end 1.4 1)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "8b2eee4b-413e-43f4-a430-27ac53579d77")
+	)
+	(fp_line
+		(start -2.7 -1.1)
+		(end 2.5 -1.1)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "cf445a7a-ad17-4f0e-95bb-b1e5809c20e0")
+	)
+	(fp_line
+		(start -2.7 1.1)
+		(end -2.7 -1.1)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "6e3e117f-f3bc-4e0f-a57b-10e698032b26")
+	)
+	(fp_line
+		(start 2.5 -1.1)
+		(end 2.5 1.1)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "5870bfde-7742-4714-85c0-4316b224b923")
+	)
+	(fp_line
+		(start 2.5 1.1)
+		(end -2.7 1.1)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "cc9e65c5-af77-4f6f-8eaa-c1cae609d433")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 2 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "58c0f18f-8472-4d93-a829-56954d27b39b")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.11)
+				(bold yes)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -2.2 0)
+		(size 0.8 2)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(thermal_bridge_angle 45)
+		(uuid "20bb6d46-eb95-44f1-82bd-d3fb09fea5bc")
+	)
+	(pad "2" smd rect
+		(at 2 0)
+		(size 0.8 2)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(thermal_bridge_angle 45)
+		(uuid "a7b9e424-b0fc-4011-b7f3-166e2e31964a")
+	)
+	(model "../kicad-3dmodels/alps-skrk-series-smd-push-button.step"
+		(offset
+			(xyz 1.9 1.5 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
